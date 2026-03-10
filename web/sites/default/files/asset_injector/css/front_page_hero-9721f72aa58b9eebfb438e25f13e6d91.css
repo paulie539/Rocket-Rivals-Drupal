@@ -1,0 +1,97 @@
+.hero-nav {
+  position: absolute; /* position relative to the header block */
+  top: 1rem;          /* distance from top */
+  right: 2rem;        /* distance from right */
+  display: flex;
+  gap: 1rem;          /* space between links */
+  align-items: center;
+  z-index: 1000;      /* keep on top of other elements */
+  
+  font-size: 1.05rem; /* slightly larger than default */
+}
+
+.hero-logo {
+  position: absolute;
+  top: 1.5rem;
+  left: 2rem;
+  z-index: 1000;
+}
+
+.hero-logo img {
+  height: 69px;   /* image height */
+  width: auto;
+}
+
+.hero-text {
+	position: absolute;
+	top: 0.25rem;
+	left: 8rem;
+	z-index: 1000;
+	
+	font-size: 2rem;
+	font-weight: 600;
+	
+  background: linear-gradient(
+    270deg,
+    #6a0dad,   /* purple */
+    #d4af37,   /* gold */
+    #6a0dad,   /* purple */
+    #d4af37   /* gold */
+    /* #ffffff   /* white */
+  );
+  background-size: 400% 400%;
+  
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  
+  animation: navGradient 6s ease infinite; /* animate a gradient of all 3 colors across the text */
+}
+
+.hero-text a {
+  text-decoration: none;      /* removes underline */
+}
+
+.hero-text a:hover {
+  background: none;           /* remove gradient on hover */
+  -webkit-text-fill-color: gold;  /* pure gold text */
+  color: gold;                /* fallback for browsers that ignore fill */
+}
+
+@keyframes navGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+.hero-nav a {
+  color: #e5e7eb;
+  text-decoration: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  transition: background 0.2s ease;
+}
+
+.hero-nav a:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.discord-button {
+  background: #5865F2;
+  color: #fff !important;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+}
+
+.discord-button:hover {
+  background: #4752c4;
+}
+

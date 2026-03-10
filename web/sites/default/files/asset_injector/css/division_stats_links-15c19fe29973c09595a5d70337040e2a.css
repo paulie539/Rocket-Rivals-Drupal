@@ -1,0 +1,48 @@
+.division-block {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.division-emblem {
+  width: 120px;
+  height: auto;
+  flex-shrink: 0;
+}
+
+.legends-link h2 a {
+  color: orange !important;         /* normal link color */
+  text-decoration: none !important; /* optional, remove underline */
+}
+
+.legends-link h2 a:hover {
+  color: gold !important;        /* hover color */
+}
+
+.challengers-link h2 a {
+  color: violet;         /* normal link color */
+  text-decoration: none; /* optional, remove underline */
+}
+
+.challengers-link h2 a:hover {
+  color: gold;        /* hover color */
+}
+
+
+.titans-link h2 a {
+  color: pink !important;         /* normal link color */
+  text-decoration: none !important; /* optional, remove underline */
+}
+
+.titans-link h2 a:hover {
+  color: gold !important;        /* hover color */
+}
+
+.return-stats a {
+	color: violet !important;
+	text-decoration: none !important;
+}
+.return-stats a:hover {
+	color:gold !important;
+}
+

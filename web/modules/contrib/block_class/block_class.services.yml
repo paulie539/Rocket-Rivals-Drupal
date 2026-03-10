@@ -1,0 +1,4 @@
+services:
+  block_class.helper:
+    class: Drupal\block_class\Service\BlockClassHelperService
+    arguments: ['@config.factory', '@current_user', '@entity_type.manager']

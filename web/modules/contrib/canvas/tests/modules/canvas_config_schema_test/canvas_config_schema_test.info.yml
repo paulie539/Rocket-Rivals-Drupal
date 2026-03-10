@@ -1,0 +1,9 @@
+name: Canvas Config schema test
+description: 'Test schema definitions'
+package: Testing
+type: module
+
+# Information added by Drupal.org packaging script on 2026-02-26
+version: '1.2.0'
+project: 'canvas'
+datestamp: 1772144516

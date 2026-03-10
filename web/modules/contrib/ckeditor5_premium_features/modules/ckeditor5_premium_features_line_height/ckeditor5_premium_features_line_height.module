@@ -1,0 +1,15 @@
+<?php
+
+/*
+ * Copyright (c) 2003-2026, CKSource Holding sp. z o.o. All rights reserved.
+ * For licensing, see https://ckeditor.com/legal/ckeditor-oss-license
+ */
+
+declare(strict_types=1);
+
+/**
+ * Implements hook_library_info_build().
+ */
+function ckeditor5_premium_features_line_height_library_info_build(): array {
+  return ckeditor5_plugin_pack_library_loader(['line-height']);
+}
