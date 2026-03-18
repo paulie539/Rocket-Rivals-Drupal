@@ -6,6 +6,23 @@ Welcome to the official repository for the **Rocket Rivals** web platform. Rocke
 * **Fair:** Transparent, structured leagues and unbiased moderation
 * **Competitive:** A community desgined to facilitate elite team-based gameplay and synergy
 
+We have competitive divisions of 3 tiers:
+
+- **Challengers**     [ Champion 1  --- Champion 3 ] 
+
+
+- **Legends**   [ Grand Champion 1  --- Grand Champion 2 ]
+
+
+- **Titans**   [ Grand Champion 3  --- Supersonic Legend ]
+
+Feel free to join our discord and get to know us if you're interested!
+https://discord.gg/593WCuF9
+
+
+This is a Drupal Based Project, and I've included the steps and tools to clone this project for personal use and adaptation. The site is a work in progress and learning experience for me. If anyone has recommendations or experiences bugs please share them so I can look into updating this project! 
+
+*Thank You*
 
 ---
 
