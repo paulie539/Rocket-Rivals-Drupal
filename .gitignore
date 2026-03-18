@@ -19,3 +19,48 @@ node_modules/
 .idea/
 *.sublime-project
 *.sublime-workspace
+
+# ── Ignore Drupal specific directories (auto-generated) ──
+/vendor/
+/web/core/
+/web/modules/contrib/
+/web/themes/contrib/
+/web/sites/*/files/
+/web/sites/*/private/
+/web/sites/*/files-private/
+
+# ── Keep composer.json and composer.lock (source files) ──
+!/composer.json
+!/composer.lock
+
+# ── Ignore local environment-specific files (secrets) ──
+.env
+.env.local
+/web/sites/default/settings.php
+/web/sites/default/settings.local.php
+/web/sites/*/services.local.yml
+
+# ── Ignore logs and temporary files ──
+*.log
+*.tmp
+*.swp
+*.swo
+*~
+
+# ── Ignore OS generated files ──
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# ── Ignore IDE/editor files ──
+.idea/
+*.iml
+*.sublime-project
+*.sublime-workspace
+.vscode/
+*.code-workspace
+
+# ── Ignore Sass/SCSS cache  ──
+.sass-cache/
+*.css.map
