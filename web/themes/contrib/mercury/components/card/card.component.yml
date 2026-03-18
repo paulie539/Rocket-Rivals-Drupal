@@ -63,6 +63,7 @@ props:
     url:
       type: string
       title: Link
+      format: uri-reference
     media:
       $ref: json-schema-definitions://canvas.module/image
       title: Image

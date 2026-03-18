@@ -1,0 +1,38 @@
+<?php
+
+/**
+ * @file
+ * Attaches the RR particle background library to specific pages.
+ */
+
+/**
+ * Implements hook_page_attachments().
+ *
+ * This hook fires on every page load. We check the current path
+ * and only attach our library when we're on a target page.
+ */
+function rr_background_page_attachments(array &$attachments) {
+
+  // ── List every path where the background should appear ──
+  $target_paths = [
+    '/home',
+    '/divisions',
+    '/standings',
+    '/schedule',
+    '/about',
+  ];
+
+  // ── Get the current page's internal path ──
+  $current_path = \Drupal::service('path.current')->getPath();
+
+  // ── Resolve it to its URL alias ──
+  // This means your $target_paths list can use clean URLs
+  // instead of internal paths like /node/42
+  $alias = \Drupal::service('path_alias.manager')
+             ->getAliasByPath($current_path);
+
+  // ── Attach the library only if we're on a target page ──
+  if (in_array($alias, $target_paths) || in_array($current_path, $target_paths)) {
+    $attachments['#attached']['library'][] = 'rr_background/background';
+  }
+}

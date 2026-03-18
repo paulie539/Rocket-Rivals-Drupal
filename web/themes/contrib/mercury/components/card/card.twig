@@ -2,7 +2,7 @@
 {% set card_style = style|default('framed') %}
 {% set card_background = background|default('noColor') %}
 {% set is_text_centered = is_text_centered|default(false) ? 'yes' : 'no' %}
-{% set is_clickable = url is not empty and url != 'No URL' ? 'yes' : 'no' %}
+{% set is_clickable = url is not empty ? 'yes' : 'no' %}
 
 {% set card =
   html_cva(

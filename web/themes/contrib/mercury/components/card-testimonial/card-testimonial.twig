@@ -95,7 +95,7 @@
         {{ citation }}
         <cite class="font-normal not-italic">
           <br />
-          {% if cite_url and cite_url != 'No URL' %}
+          {% if cite_url %}
             <a href="{{ cite_url }}" target="_blank" class="underline underline-offset-2 hover:opacity-80">{{ cite_text }}</a>
           {% else %}
             <span class="text-base">{{ cite_text }}</span>

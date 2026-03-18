@@ -16,6 +16,7 @@ props:
     url:
       type: string
       title: Link
+      format: uri-reference
     style:
       type: string
       title: Style

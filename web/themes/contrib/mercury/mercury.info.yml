@@ -14,7 +14,7 @@ regions:
 dependencies:
   - "cva:cva"
 
-# Information added by Drupal.org packaging script on 2026-02-18
-version: '1.0.1'
+# Information added by Drupal.org packaging script on 2026-03-09
+version: '1.0.2'
 project: 'mercury'
-datestamp: 1771382471
+datestamp: 1773061901

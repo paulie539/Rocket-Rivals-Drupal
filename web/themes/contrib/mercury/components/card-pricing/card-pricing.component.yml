@@ -63,6 +63,7 @@ props:
     button_url:
       type: string
       title: Link
+      format: uri-reference
     button_label:
       type: string
       title: Button label

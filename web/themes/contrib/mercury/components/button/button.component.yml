@@ -32,6 +32,7 @@ props:
     href:
       type: string
       title: Link
+      format: uri-reference
     size:
       type: string
       title: Button size

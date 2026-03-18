@@ -1,4 +1,4 @@
-{% set has_url = url is not empty and url != 'No URL' ? 'yes' : 'no' %}
+{% set has_url = url is not empty ? 'yes' : 'no' %}
 {% set is_icon_first = icon_first is not empty ? 'yes' : 'no' %}
 
 {# Normalize badge_classes - handle both array and string formats #}

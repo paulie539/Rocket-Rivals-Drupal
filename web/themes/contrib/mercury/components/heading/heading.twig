@@ -2,7 +2,7 @@
 {% set heading_align = align|default('left') %}
 {% set heading_text_color = text_color|default('default') %}
 {% set heading_text_size = text_size|default('heading-responsive-4xl') %}
-{% set has_url = url is not empty and url != 'No URL' ? 'yes' : 'no' %}
+{% set has_url = url is not empty ? 'yes' : 'no' %}
 
 {% set heading_variants =
   html_cva(

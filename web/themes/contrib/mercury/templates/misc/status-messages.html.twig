@@ -20,7 +20,7 @@
  */
 #}
 {{ attach_library('mercury/messages') }}
-<div data-drupal-messages class="fixed bottom-4 z-50 flex flex-col gap-3 px-4 sm:right-4 sm:max-w-lg sm:p-0 md:max-w-xl">
+<div data-drupal-messages class="fixed bottom-4 z-50 flex flex-col gap-3 px-4 sm:right-4 sm:max-w-lg sm:p-0 md:max-w-xl xl:max-w-2xl">
   {% for type, messages in message_list %}
     {% if type == 'status' %}
       {% set type_class = 'bg-green-100 text-green-900' %}
@@ -40,7 +40,9 @@
       {% set close_button_class = 'text-red-700 hover:text-red-900 hover:bg-red-200' %}
     {% endif %}
     <div
-      class="message-item flex flex-row items-start gap-2 rounded-md p-4 shadow-lg transition-all duration-300 ease-out {{ type_class }}"
+      class="message-item flex max-h-[calc(100vh-12rem)] flex-row items-start gap-2 overflow-y-auto rounded-md p-4 shadow-lg transition-all duration-300 ease-out {{
+      type_class
+      }}"
       data-message-item
       role="contentinfo"
       aria-label="{{ status_headings[type] }}"

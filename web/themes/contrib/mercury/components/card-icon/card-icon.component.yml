@@ -86,6 +86,7 @@ props:
     url:
       type: string
       title: Link
+      format: uri-reference
     text:
       type: string
       title: Heading

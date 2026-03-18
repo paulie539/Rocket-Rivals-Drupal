@@ -1,0 +1,5 @@
+name: 'Rocket Rivals Animated Background'
+type: module
+description: 'Adds an animated particle canvas background to selected pages.'
+core_version_requirement: ^10 || ^11
+package: Custom

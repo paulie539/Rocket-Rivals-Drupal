@@ -1,0 +1,9 @@
+background:
+  version: 1.0
+  css:
+    theme:
+      css/rr_background.css: {}
+  js:
+    js/rr_background.js: {}
+  dependencies:
+    - core/drupal

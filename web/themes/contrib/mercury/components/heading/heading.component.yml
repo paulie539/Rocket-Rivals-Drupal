@@ -76,3 +76,4 @@ props:
     url:
       type: string
       title: Link
+      format: uri-reference

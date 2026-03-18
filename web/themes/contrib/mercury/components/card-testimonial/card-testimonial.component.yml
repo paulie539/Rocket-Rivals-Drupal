@@ -26,6 +26,7 @@ props:
     cite_url:
       type: string
       title: Citation link
+      format: uri-reference
     align:
       type: string
       title: Alignment

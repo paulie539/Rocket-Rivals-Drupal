@@ -1,6 +1,6 @@
 {% set classes = ['blockquote flex flex-col gap-4 !w-auto'] %}
 
-{% set cite_attr = cite_url and cite_url != 'No URL' ? 'cite="' ~ cite_url ~ '"' : '' %}
+{% set cite_attr = cite_url ? 'cite="' ~ cite_url ~ '"' : '' %}
 
 <blockquote class="{{ classes|join(' ') }} relative ms-10 text-foreground" {{ cite_attr }}>
   <svg
@@ -24,7 +24,7 @@
     <footer class="text-left text-base leading-[1.2] font-bold not-italic md:text-lg xl:text-xl">
       {{ cite_name }}<br />
       <cite>
-        {% if cite_url and cite_url != 'No URL' %}
+        {% if cite_url %}
           <a
             href="{{ cite_url }}"
             target="_blank"
