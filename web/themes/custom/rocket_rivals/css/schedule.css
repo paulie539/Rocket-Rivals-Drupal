@@ -1,0 +1,144 @@
+/* ══════════════════════════════════════════
+   SCHEDULE PAGE — Division selector
+   ══════════════════════════════════════════ */
+
+.rr-schedule-wrapper {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 2rem 1rem 3rem;
+}
+
+.rr-schedule-intro {
+  text-align: center;
+  color: rgba(229, 231, 235, 0.65);
+  font-size: 0.95rem;
+  letter-spacing: 0.03em;
+  margin-bottom: 2rem;
+}
+
+/* ── Division tab buttons ── */
+
+.rr-division-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-bottom: 2.25rem;
+}
+
+.rr-tab-btn {
+  position: relative;
+  padding: 0.55rem 1.6rem;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.04);
+  color: rgba(229, 231, 235, 0.55);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: color 0.2s, border-color 0.2s, background 0.2s, box-shadow 0.2s;
+  overflow: hidden;
+}
+
+.rr-tab-btn::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 0.25s;
+}
+
+.rr-tab-btn:hover {
+  color: #f3f4f6;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+/* Per-division accent colours */
+
+.rr-tab-btn[data-division="titans"] {
+  --accent: #ff7eb3; /* pink */
+}
+.rr-tab-btn[data-division="legends"] {
+  --accent: #f97316; /* orange */
+}
+.rr-tab-btn[data-division="challengers"] {
+  --accent: #c084fc; /* violet */
+}
+
+.rr-tab-btn.is-active {
+  color: var(--accent);
+  border-color: var(--accent);
+  background: rgba(255, 255, 255, 0.07);
+  box-shadow: 0 0 14px -4px var(--accent), inset 0 0 12px -8px var(--accent);
+}
+
+.rr-tab-btn.is-active::after {
+  background: radial-gradient(ellipse at 50% 100%, var(--accent) 0%, transparent 70%);
+  opacity: 0.12;
+}
+
+/* ── Schedule image panels ── */
+
+.rr-schedule-panels {
+  position: relative;
+}
+
+.rr-schedule-panel {
+  display: none;
+  animation: scheduleReveal 0.4s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.rr-schedule-panel.is-visible {
+  display: block;
+}
+
+.rr-schedule-panel img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 4px 32px rgba(0, 0, 0, 0.55);
+}
+
+/* ── Accent border beneath image matches active division ── */
+
+.rr-schedule-panel[data-division="titans"] img {
+  border-top: 2px solid #ff7eb3;
+}
+.rr-schedule-panel[data-division="legends"] img {
+  border-top: 2px solid #f97316;
+}
+.rr-schedule-panel[data-division="challengers"] img {
+  border-top: 2px solid #c084fc;
+}
+
+/* ── Reveal animation ── */
+
+@keyframes scheduleReveal {
+  from {
+    opacity: 0;
+    transform: translateY(14px) scale(0.985);
+    filter: blur(3px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    filter: blur(0);
+  }
+}
+
+/* ── Mobile ── */
+
+@media (max-width: 560px) {
+  .rr-division-tabs {
+    gap: 0.5rem;
+  }
+
+  .rr-tab-btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.78rem;
+    letter-spacing: 0.07em;
+  }
+}

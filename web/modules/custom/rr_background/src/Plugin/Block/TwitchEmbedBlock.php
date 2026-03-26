@@ -28,13 +28,8 @@ class TwitchEmbedBlock extends BlockBase {
       '#type' => 'inline_template',
       '#template' => '
         <p><a href="https://www.twitch.tv/rocket_rivals">Rocket Rivals on Twitch</a></p>
-        <div class="twitch-embed-wrapper">
-          <iframe
-            src="https://player.twitch.tv/?channel=Rocket_Rivals&parent={{ host }}"
-            frameborder="0"
-            allowfullscreen
-            scrolling="no">
-          </iframe>
+        <div class="twitch-embed-wrapper"
+             data-twitch-src="https://player.twitch.tv/?channel=Rocket_Rivals&parent={{ host }}">
         </div>
       ',
       '#context' => [
