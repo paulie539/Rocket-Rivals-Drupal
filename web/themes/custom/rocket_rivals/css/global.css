@@ -1,0 +1,170 @@
+/* ── Base reset ── */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* ── Dark background & base type ── */
+body {
+  margin: 0;
+  background-color: #08060e;
+  color: #e5e7eb;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+  line-height: 1.6;
+}
+
+a {
+  color: #a855f7;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #d4af37;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #f3f4f6;
+  margin-top: 0;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid rgba(168, 85, 247, 0.3);
+  margin: 1.5rem 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ── Page layout ── */
+#page-wrapper {
+  position: relative;
+  min-height: 100vh;
+  z-index: 1;
+}
+
+/* Header is the hero overlay — absolutely positioned so it floats
+   over the canvas background without consuming document space. */
+#header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  z-index: 100;
+  pointer-events: none;
+}
+
+#header > * {
+  pointer-events: auto;
+}
+
+/* Main content clears the hero nav overlay */
+#main {
+  padding: 7rem 2rem 3rem;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* ── Block & section rhythm ── */
+
+/* Space between blocks stacked in the same region */
+.layout__region > div + div {
+  margin-top: 2rem;
+}
+
+/* Space between Layout Builder sections */
+.layout + .layout {
+  margin-top: 2.5rem;
+}
+
+/* Breathe between paragraphs */
+p {
+  margin-top: 0;
+  margin-bottom: 1.1rem;
+}
+
+/* Headings get a little extra air above them when following content */
+h2, h3, h4 {
+  margin-top: 1.75rem;
+  margin-bottom: 0.6rem;
+}
+
+/* First heading on a page shouldn't have extra top margin */
+.layout__region > div:first-child h2:first-child,
+.layout__region > div:first-child h3:first-child {
+  margin-top: 0;
+}
+
+/* ── Twitch embed responsive wrapper ── */
+.twitch-embed-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.twitch-embed-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* ── Status messages ── */
+.messages-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.messages {
+  padding: 1rem 1.5rem;
+  border-radius: 6px;
+  margin: 1rem 0;
+  color: #f3f4f6;
+}
+
+.messages--status  { background: rgba(16, 185, 129, 0.15); border: 1px solid #10b981; }
+.messages--warning { background: rgba(245, 158, 11, 0.15);  border: 1px solid #f59e0b; }
+.messages--error   { background: rgba(239, 68, 68, 0.15);   border: 1px solid #ef4444; }
+
+/* ── Mobile layout ── */
+@media (max-width: 768px) {
+  #main {
+    padding: 7.5rem 1.25rem 2rem;
+  }
+}
+
+@media (max-width: 560px) {
+  #main {
+    padding: 8.5rem 1rem 2rem;
+  }
+}
+
+/* ── Visually hidden (accessibility) ── */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.visually-hidden.focusable:active,
+.visually-hidden.focusable:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  clip: auto;
+  white-space: normal;
+}

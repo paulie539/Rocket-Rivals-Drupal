@@ -1,8 +1,3 @@
-/* ── Page background colour ── */
-body {
-  background-color: #08060e;
-}
-
 /* ── Canvas: fixed, full-screen, behind all page content ── */
 #bg-canvas {
   position: fixed;

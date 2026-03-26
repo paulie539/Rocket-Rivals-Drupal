@@ -1,0 +1,17 @@
+name: Rocket Rivals
+type: theme
+description: Custom frontend theme for the Rocket Rivals esports league.
+package: Custom
+core_version_requirement: ^10 || ^11
+base theme: stable9
+
+libraries:
+  - rocket_rivals/global
+
+regions:
+  page_top: 'Page top'
+  page_bottom: 'Page bottom'
+  header: Header
+  highlighted: Highlighted
+  content: Content
+  sidebar_first: 'Sidebar first'

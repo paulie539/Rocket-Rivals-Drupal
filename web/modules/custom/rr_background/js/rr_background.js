@@ -35,8 +35,9 @@
       const COLORS = [
         'rgba(168, 85,  247,',   /* purple  */
         'rgba(251, 146,  60,',   /* orange  */
+        'rgba(255, 215,   0,',   /* gold    */
         'rgba(236,  72, 153,',   /* pink    */
-        'rgba(255, 255, 255,',   /* white   */
+        /* 'rgba(255, 255, 255,',   white   */
       ];
 
       // ── Build the particle pool ──

@@ -1,0 +1,29 @@
+{#
+/**
+ * @file
+ * Renders the site branding as the hero logo and animated title.
+ *
+ * Outputs two absolutely-positioned elements that form the left side
+ * of the hero navigation overlay:
+ *   .hero-logo — the site logo image (top-left)
+ *   .hero-text  — the animated gradient site name (beside the logo)
+ *
+ * Variables:
+ * - site_logo:   URL of the site logo image.
+ * - site_name:   The name of the site.
+ * - site_slogan: The slogan of the site (not used here).
+ */
+#}
+{% if site_logo %}
+  <div class="hero-logo">
+    <a href="{{ path('<front>') }}" rel="home" title="{{ site_name }}">
+      <img src="{{ site_logo }}" alt="{{ site_name }}" />
+    </a>
+  </div>
+{% endif %}
+
+{% if site_name %}
+  <div class="hero-text">
+    <p><a href="{{ path('<front>') }}" rel="home"><strong>{{ site_name }}</strong></a></p>
+  </div>
+{% endif %}

@@ -1,0 +1,271 @@
+/* ── Division link colours ── */
+.legends-link a,
+.legends-link h2 a {
+  color: orange;
+  text-decoration: none;
+}
+
+.legends-link a:hover,
+.legends-link h2 a:hover {
+  color: gold;
+}
+
+.challengers-link a,
+.challengers-link h2 a,
+.divisions-links.challengers-link h2 a {
+  color: violet;
+  text-decoration: none;
+}
+
+.challengers-link a:hover,
+.challengers-link h2 a:hover {
+  color: gold;
+}
+
+.titans-link a,
+.titans-link h2 a {
+  color: pink;
+  text-decoration: none;
+}
+
+.titans-link a:hover,
+.titans-link h2 a:hover {
+  color: gold;
+}
+
+.return-stats a {
+  color: violet;
+  text-decoration: none;
+}
+
+.return-stats a:hover {
+  color: gold;
+}
+
+/* ── Season stats links — styled as bordered buttons ── */
+.legends-link h2,
+.challengers-link h2,
+.titans-link h2,
+.divisions-links h2 {
+  display: inline-block;
+  margin: 0.25rem;
+}
+
+.legends-link h2 a,
+.challengers-link h2 a,
+.titans-link h2 a,
+.divisions-links h2 a {
+  display: inline-block;
+  padding: 0.45rem 1.2rem;
+  border: 1px solid currentColor;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  transition: background 0.2s ease, box-shadow 0.2s ease;
+}
+
+.legends-link h2 a:hover,
+.challengers-link h2 a:hover,
+.titans-link h2 a:hover,
+.divisions-links h2 a:hover {
+  background: rgba(255, 215, 0, 0.08);
+  box-shadow: 0 0 8px rgba(255, 215, 0, 0.2);
+  color: gold;
+}
+
+/* ── Division select dropdown ── */
+#division-select {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid rgba(168, 85, 247, 0.5);
+  background: rgba(255, 255, 255, 0.05);
+  color: #e5e7eb;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+#division-select:focus {
+  outline: none;
+  border-color: #a855f7;
+  box-shadow: 0 0 0 2px rgba(168, 85, 247, 0.25);
+}
+
+#division-select option {
+  background: #1a0a2e;
+  color: #e5e7eb;
+}
+
+/* ══════════════════════════════════════════════════
+   DIVISIONS PAGE — gaming card panel rows
+   Scoped to node 13 (/divisions) via data attribute
+   ══════════════════════════════════════════════════ */
+
+/* ── Card panel base ── */
+article[data-history-node-id="13"] .layout--twocol-section {
+  margin: 0 auto 1.25rem;
+  padding: 1.5rem 2rem;
+  border-radius: 10px;
+  background: linear-gradient(135deg, rgba(255,255,255,0.04) 0%, rgba(255,255,255,0.01) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-left: 4px solid transparent;
+  transition: transform 0.25s ease, box-shadow 0.3s ease, background 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Subtle inner shimmer line at the top of each card */
+article[data-history-node-id="13"] .layout--twocol-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 4px; /* clear the left border */
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.12), transparent);
+  pointer-events: none;
+}
+
+article[data-history-node-id="13"] .layout--twocol-section:hover {
+  transform: translateY(-3px);
+  background: linear-gradient(135deg, rgba(255,255,255,0.07) 0%, rgba(255,255,255,0.02) 100%);
+}
+
+/* ── Challengers row — violet ── */
+article[data-history-node-id="13"] .layout--twocol-section:nth-child(2) {
+  border-left-color: violet;
+}
+article[data-history-node-id="13"] .layout--twocol-section:nth-child(2):hover {
+  box-shadow: 0 8px 32px rgba(238, 130, 238, 0.22), inset 0 0 40px rgba(238, 130, 238, 0.04);
+}
+
+/* ── Legends row — orange ── */
+article[data-history-node-id="13"] .layout--twocol-section:nth-child(3) {
+  border-left-color: orange;
+}
+article[data-history-node-id="13"] .layout--twocol-section:nth-child(3):hover {
+  box-shadow: 0 8px 32px rgba(255, 165, 0, 0.22), inset 0 0 40px rgba(255, 165, 0, 0.04);
+}
+
+/* ── Titans row — pink ── */
+article[data-history-node-id="13"] .layout--twocol-section:nth-child(4) {
+  border-left-color: pink;
+}
+article[data-history-node-id="13"] .layout--twocol-section:nth-child(4):hover {
+  box-shadow: 0 8px 32px rgba(255, 192, 203, 0.22), inset 0 0 40px rgba(255, 192, 203, 0.04);
+}
+
+/* ── Icon (left) column ── */
+article[data-history-node-id="13"] .layout--twocol-section .layout__region--first {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Make the anchor a flex column so the label sits below the icon */
+article[data-history-node-id="13"] .layout--twocol-section .layout__region--first a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+}
+
+article[data-history-node-id="13"] .layout--twocol-section .layout__region--first .esports-card {
+  max-width: 190px;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* "Join Discord" label below each division icon */
+article[data-history-node-id="13"] .layout--twocol-section .layout__region--first a::after {
+  content: 'Join Discord ↗';
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  opacity: 0.7;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+article[data-history-node-id="13"] .layout--twocol-section .layout__region--first a:hover::after {
+  opacity: 1;
+  transform: translateY(2px);
+}
+
+/* Per-division label colours */
+article[data-history-node-id="13"] .layout--twocol-section:nth-child(2) .layout__region--first a::after {
+  color: violet;
+}
+article[data-history-node-id="13"] .layout--twocol-section:nth-child(3) .layout__region--first a::after {
+  color: orange;
+}
+article[data-history-node-id="13"] .layout--twocol-section:nth-child(4) .layout__region--first a::after {
+  color: pink;
+}
+
+/* ── Rank range (right) column ── */
+article[data-history-node-id="13"] .layout--twocol-section .layout__region--second {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem 0 0.75rem 1.5rem;
+}
+
+/* "Qualifying Ranks" label above the icons */
+article[data-history-node-id="13"] .layout--twocol-section .layout__region--second::before {
+  content: 'Qualifying Ranks';
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  opacity: 0.4;
+}
+
+article[data-history-node-id="13"] .layout--twocol-section .layout__region--second img {
+  height: 120px;
+  width: auto;
+  display: inline-block;
+  vertical-align: middle;
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+article[data-history-node-id="13"] .layout--twocol-section .layout__region--second img:hover {
+  transform: scale(1.1);
+  filter: brightness(1.25);
+}
+
+/* ── Divisions header section spacing ── */
+article[data-history-node-id="13"] .layout--onecol {
+  margin-bottom: 2rem;
+  padding: 0 0.25rem;
+}
+
+/* ── Mobile: stack icon above rank range ── */
+@media (max-width: 600px) {
+  article[data-history-node-id="13"] .layout--twocol-section {
+    display: flex !important;
+    flex-direction: column;
+    padding: 1.25rem 1rem;
+    margin-bottom: 1rem;
+  }
+
+  article[data-history-node-id="13"] .layout--twocol-section .layout__region--first {
+    justify-content: flex-start;
+    margin-bottom: 1rem;
+  }
+
+  article[data-history-node-id="13"] .layout--twocol-section .layout__region--first .esports-card {
+    max-width: 130px;
+  }
+
+  article[data-history-node-id="13"] .layout--twocol-section .layout__region--second {
+    padding-left: 0;
+    gap: 0.6rem;
+  }
+
+  article[data-history-node-id="13"] .layout--twocol-section .layout__region--second img {
+    height: 85px;
+  }
+}
