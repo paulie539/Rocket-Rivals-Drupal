@@ -1,0 +1,402 @@
+/* ══════════════════════════════════════════
+   HOME PAGE BLOCKS
+   ══════════════════════════════════════════ */
+
+/* ── Shared section title ── */
+.rr-section-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(243, 244, 246, 0.5);
+  margin-bottom: 1.25rem;
+}
+
+/* ── Division colour helpers ── */
+.titans-color      { color: pink; }
+.legends-color     { color: orange; }
+.challengers-color { color: violet; }
+
+
+/* ══════════════════════════════════════════
+   SEASON HIGHLIGHTS — CSS-only tabs
+   ══════════════════════════════════════════ */
+
+.rr-showcase input[type="radio"] {
+  display: none;
+}
+
+.showcase-header {
+  margin-bottom: 1.25rem;
+}
+
+.showcase-title {
+  font-size: 1.4rem;
+  margin-bottom: 0.25rem;
+}
+
+.showcase-subtitle {
+  color: rgba(229, 231, 235, 0.55);
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+/* Tab bar */
+.clip-tabs {
+  display: flex;
+  gap: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  margin-bottom: 0;
+}
+
+.clip-tab {
+  padding: 0.6rem 1.4rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: rgba(229, 231, 235, 0.45);
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -1px;
+  transition: color 0.2s ease, border-color 0.2s ease;
+  user-select: none;
+}
+
+.clip-tab:hover {
+  color: rgba(229, 231, 235, 0.8);
+}
+
+/* Active tab per radio state */
+#clip1:checked ~ .clip-tabs label[for="clip1"],
+#clip2:checked ~ .clip-tabs label[for="clip2"],
+#clip3:checked ~ .clip-tabs label[for="clip3"] {
+  color: #a855f7;
+  border-bottom-color: #a855f7;
+}
+
+/* Panels */
+.clip-panel {
+  display: none;
+}
+
+#clip1:checked ~ .clip-panels .panel-1,
+#clip2:checked ~ .clip-panels .panel-2,
+#clip3:checked ~ .clip-panels .panel-3 {
+  display: block;
+}
+
+/* Video placeholder */
+.video-placeholder {
+  background: linear-gradient(135deg, rgba(106, 13, 173, 0.12) 0%, rgba(8, 6, 14, 0.6) 100%);
+  border: 1px solid rgba(168, 85, 247, 0.15);
+  border-top: none;
+  border-radius: 0 0 10px 10px;
+  min-height: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.vp-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.play-btn {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  border: 2px solid rgba(168, 85, 247, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  color: #a855f7;
+  cursor: pointer;
+  transition: background 0.2s ease, border-color 0.2s ease;
+  padding-left: 4px; /* optical centre for ▶ */
+}
+
+.play-btn:hover {
+  background: rgba(168, 85, 247, 0.15);
+  border-color: #a855f7;
+}
+
+.vp-title {
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 0;
+  color: #f3f4f6;
+}
+
+.vp-teams {
+  font-size: 0.88rem;
+  margin: 0;
+  color: rgba(229, 231, 235, 0.6);
+}
+
+.coming-soon {
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(168, 85, 247, 0.55);
+  border: 1px solid rgba(168, 85, 247, 0.25);
+  padding: 0.2rem 0.65rem;
+  border-radius: 999px;
+}
+
+
+/* ══════════════════════════════════════════
+   RECENT RESULTS — scoreboard
+   ══════════════════════════════════════════ */
+
+.rr-results {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 10px;
+  padding: 1.5rem 1.75rem;
+}
+
+.results-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  margin-bottom: 1.25rem;
+}
+
+.result-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.65rem 1rem;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: background 0.2s ease;
+}
+
+.result-row:hover {
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.result-team {
+  flex: 1;
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+.result-team:last-of-type {
+  text-align: right;
+}
+
+.result-score {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 1.1rem;
+  font-weight: 800;
+  min-width: 70px;
+  justify-content: center;
+}
+
+.score-w   { color: #f3f4f6; }
+.score-sep { color: rgba(243, 244, 246, 0.3); font-size: 0.85rem; }
+.score-l   { color: rgba(243, 244, 246, 0.4); }
+
+.result-meta {
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  color: rgba(229, 231, 235, 0.35);
+  min-width: 72px;
+  text-align: right;
+}
+
+.rr-view-all {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #a855f7;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.rr-view-all:hover {
+  color: #d4af37;
+}
+
+
+/* ══════════════════════════════════════════
+   DIVISION SPOTLIGHT — three cards
+   ══════════════════════════════════════════ */
+
+.spotlight-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.spotlight-card {
+  display: block;
+  text-decoration: none;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  background: rgba(255, 255, 255, 0.03);
+  transition: transform 0.25s ease, box-shadow 0.3s ease, background 0.3s ease;
+  overflow: hidden;
+}
+
+.spotlight-card:hover {
+  transform: translateY(-4px);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.challengers-card { border-top: 3px solid violet; }
+.legends-card     { border-top: 3px solid orange; }
+.titans-card      { border-top: 3px solid pink;   }
+
+.challengers-card:hover { box-shadow: 0 8px 28px rgba(238, 130, 238, 0.2); }
+.legends-card:hover     { box-shadow: 0 8px 28px rgba(255, 165, 0,   0.2); }
+.titans-card:hover      { box-shadow: 0 8px 28px rgba(255, 192, 203, 0.2); }
+
+.spotlight-card-inner {
+  padding: 1.25rem 1.1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.spotlight-card-inner h4 {
+  font-size: 1rem;
+  font-weight: 800;
+  margin: 0;
+  color: #f3f4f6;
+}
+
+.challengers-card h4 { color: violet; }
+.legends-card h4     { color: orange; }
+.titans-card h4      { color: pink;   }
+
+.spotlight-card-inner p {
+  font-size: 0.82rem;
+  color: rgba(229, 231, 235, 0.6);
+  margin: 0;
+  line-height: 1.5;
+}
+
+.spotlight-rank-range {
+  font-size: 0.7rem;
+  letter-spacing: 0.05em;
+  color: rgba(229, 231, 235, 0.35);
+  margin-top: 0.25rem;
+}
+
+.spotlight-cta {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: rgba(229, 231, 235, 0.5);
+  margin-top: 0.5rem;
+  transition: color 0.2s ease;
+}
+
+.spotlight-card:hover .spotlight-cta {
+  color: #d4af37;
+}
+
+
+/* ══════════════════════════════════════════
+   COMMUNITY CTA — discord banner
+   ══════════════════════════════════════════ */
+
+.rr-community-cta {
+  border-radius: 12px;
+  background: linear-gradient(135deg, rgba(88, 101, 242, 0.15) 0%, rgba(106, 13, 173, 0.15) 100%);
+  border: 1px solid rgba(88, 101, 242, 0.25);
+  padding: 2.5rem 2rem;
+  text-align: center;
+}
+
+.cta-content h3 {
+  font-size: 1.4rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+  color: #f3f4f6;
+}
+
+.cta-content > p {
+  color: rgba(229, 231, 235, 0.65);
+  font-size: 0.95rem;
+  margin-bottom: 1.75rem;
+}
+
+.cta-stats {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin-bottom: 2rem;
+}
+
+.cta-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.cta-stat-num {
+  font-size: 1.75rem;
+  font-weight: 800;
+  background: linear-gradient(270deg, #6a0dad, #d4af37);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.cta-stat-label {
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(229, 231, 235, 0.45);
+}
+
+.cta-discord-btn {
+  display: inline-block;
+  background: #5865F2;
+  color: #fff !important;
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 0.75rem 2rem;
+  border-radius: 999px;
+  text-decoration: none;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.cta-discord-btn:hover {
+  background: #4752c4;
+  transform: translateY(-2px);
+  color: #fff !important;
+}
+
+
+/* ══════════════════════════════════════════
+   MOBILE
+   ══════════════════════════════════════════ */
+
+@media (max-width: 700px) {
+  .spotlight-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-stats {
+    gap: 1.5rem;
+  }
+
+  .result-meta {
+    display: none;
+  }
+
+  .clip-tab {
+    padding: 0.5rem 0.9rem;
+    font-size: 0.82rem;
+  }
+}

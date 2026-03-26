@@ -8,7 +8,7 @@ Welcome to the official repository for the **Rocket Rivals** web platform. Rocke
 
 We have competitive divisions of 3 tiers:
 
-- **Challengers**     [ Champion 1  --- Champion 3 ] 
+- **Challengers**     [ ``Champion 1  --- Champion 3 ]
 
 
 - **Legends**   [ Grand Champion 1  --- Grand Champion 2 ]
@@ -20,7 +20,7 @@ Feel free to join our discord and get to know us if you're interested!
 https://discord.gg/593WCuF9
 
 
-This is a Drupal Based Project, and I've included the steps and tools to clone this project for personal use and adaptation. The site is a work in progress and learning experience for me. If anyone has recommendations or experiences bugs please share them so I can look into updating this project! 
+This is a Drupal Based Project, and I've included the steps and tools to clone this project for personal use and adaptation. The site is a work in progress and learning experience for me. If anyone has recommendations or experiences bugs please share them so I can look into updating this project!
 
 *Thank You*
 
@@ -82,7 +82,7 @@ Ensure you have the following installed on your machine:
 
 ## 🏗 Deployment
 
-This project is configured for a standard Drupal deployment workflow. 
+This project is configured for a standard Drupal deployment workflow.
 
 1.  **Build:** Run `composer install --no-dev` to prepare the production vendor directory.
 2.  **Artifacts:** Ensure the `web/sites/default/settings.php` contains the appropriate environment variables for your production server.

@@ -111,7 +111,6 @@ article[data-history-node-id="13"] .layout--twocol-section {
   border-left: 4px solid transparent;
   transition: transform 0.25s ease, box-shadow 0.3s ease, background 0.3s ease;
   position: relative;
-  overflow: hidden;
 }
 
 /* Subtle inner shimmer line at the top of each card */
@@ -223,11 +222,15 @@ article[data-history-node-id="13"] .layout--twocol-section .layout__region--seco
   opacity: 0.4;
 }
 
+article[data-history-node-id="13"] .layout--twocol-section .layout__region--second span[data-tooltip] {
+  display: inline-block;
+  vertical-align: middle;
+}
+
 article[data-history-node-id="13"] .layout--twocol-section .layout__region--second img {
   height: 120px;
   width: auto;
-  display: inline-block;
-  vertical-align: middle;
+  display: block;
   transition: transform 0.2s ease, filter 0.2s ease;
 }
 

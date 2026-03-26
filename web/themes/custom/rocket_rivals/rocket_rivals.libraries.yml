@@ -6,3 +6,4 @@ global:
       css/hero.css: {}
       css/divisions.css: {}
       css/cards.css: {}
+      css/home.css: {}

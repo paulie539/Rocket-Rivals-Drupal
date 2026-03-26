@@ -132,6 +132,59 @@ h2, h3, h4 {
 .messages--warning { background: rgba(245, 158, 11, 0.15);  border: 1px solid #f59e0b; }
 .messages--error   { background: rgba(239, 68, 68, 0.15);   border: 1px solid #ef4444; }
 
+/* ── Tooltip component ──────────────────────────────────────────
+   Usage: add data-tooltip="your text" to any element.
+   Appears below by default. Add data-tooltip-pos="above" to flip.
+   The element must have position: relative (or absolute/fixed).
+   ────────────────────────────────────────────────────────────── */
+[data-tooltip] {
+  position: relative;
+}
+
+[data-tooltip]::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  top: calc(100% + 0.6rem);
+  left: 50%;
+  transform: translateX(-50%) translateY(-6px);
+  background: rgba(8, 6, 14, 0.95);
+  color: #e5e7eb;
+  font-size: 0.73rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  white-space: nowrap;
+  padding: 0.35rem 0.8rem;
+  border-radius: 6px;
+  border: 1px solid rgba(168, 85, 247, 0.35);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+  pointer-events: none;
+  opacity: 0;
+  z-index: 9999;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+[data-tooltip]:hover::after {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+/* Tooltip above */
+[data-tooltip][data-tooltip-pos="above"]::after {
+  top: auto;
+  bottom: calc(100% + 0.6rem);
+  transform: translateX(-50%) translateY(6px);
+}
+
+[data-tooltip][data-tooltip-pos="above"]:hover::after {
+  transform: translateX(-50%) translateY(0);
+}
+
+/* ── Spacer blocks ── */
+.rr-spacer       { display: block; width: 100%; }
+.rr-spacer--sm   { height: 1.5rem; }
+.rr-spacer--md   { height: 3rem;   }
+.rr-spacer--lg   { height: 6rem;   }
+
 /* ── Mobile layout ── */
 @media (max-width: 768px) {
   #main {

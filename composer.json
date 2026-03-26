@@ -16,8 +16,8 @@
     ],
     "require": {
         "composer/installers": "^2.3",
-        "drupal/asset_injector": "^2.21",
         "drupal/block_class": "^4.0",
+        "drupal/bootstrap": "^5.0",
         "drupal/canvas": "^1.1",
         "drupal/ckeditor5_plugin_pack": "^1.5",
         "drupal/core-composer-scaffold": "^11.3",
