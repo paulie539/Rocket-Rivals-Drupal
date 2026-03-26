@@ -1,0 +1,35 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display the basic html structure.
+ *
+ * Variables:
+ * - logged_in: A flag indicating if user is logged in.
+ * - root_path: The root path of the current page (e.g. 'node').
+ * - node_type: The content type for the current node, if any.
+ * - head_title: Array of tokens for the <title> tag.
+ * - page_top: Initial rendering array containing any pre-body-tag elements.
+ * - page: The rendered page.
+ * - page_bottom: Final rendering array containing any post-body-tag elements.
+ * - attributes: HTML attributes for the <html> element.
+ * - html_attributes: HTML attributes for the <html> element (alias).
+ */
+#}
+<!DOCTYPE html>
+<html{{ html_attributes }}>
+  <head>
+    <head-placeholder token="{{ placeholder_token }}">
+    <title>{{ head_title|safe_join(' | ') }}</title>
+    <css-placeholder token="{{ placeholder_token }}">
+    <js-placeholder token="{{ placeholder_token }}">
+  </head>
+  <body{{ attributes.addClass(logged_in ? 'user-logged-in' : 'user-not-logged-in') }}>
+    <a href="#main-content" class="visually-hidden focusable">
+      {{- 'Skip to main content'|t -}}
+    </a>
+    {{ page_top }}
+    {{ page }}
+    {{ page_bottom }}
+    <js-bottom-placeholder token="{{ placeholder_token }}">
+  </body>
+</html>

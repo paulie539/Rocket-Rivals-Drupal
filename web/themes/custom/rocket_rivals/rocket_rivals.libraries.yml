@@ -1,0 +1,9 @@
+global:
+  version: 1.0
+  css:
+    theme:
+      css/global.css: {}
+      css/hero.css: {}
+      css/divisions.css: {}
+      css/cards.css: {}
+      css/home.css: {}

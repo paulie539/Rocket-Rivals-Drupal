@@ -1,0 +1,35 @@
+{#
+/**
+ * @file
+ * Rocket Rivals page template.
+ *
+ * The header region holds the hero nav overlay (logo, site name, menu links).
+ * It is position: absolute so it floats over the particle canvas background
+ * without pushing main content down. #main has matching top padding.
+ *
+ * Regions:
+ * - page.header:      Hero navigation overlay (branding + main menu)
+ * - page.highlighted: Status messages
+ * - page.content:     Primary page content
+ */
+#}
+<div id="page-wrapper">
+
+  {% if page.header %}
+    <header id="header" role="banner">
+      {{ page.header }}
+    </header>
+  {% endif %}
+
+  {% if page.highlighted %}
+    <div id="highlighted">
+      {{ page.highlighted }}
+    </div>
+  {% endif %}
+
+  <main id="main" role="main">
+    <a id="main-content" tabindex="-1"></a>
+    {{ page.content }}
+  </main>
+
+</div>
