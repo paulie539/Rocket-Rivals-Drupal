@@ -1,0 +1,124 @@
+/* ══════════════════════════════════════════
+   LEAGUE FORMAT BLOCK — stat cards
+   ══════════════════════════════════════════ */
+
+.rr-format {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 2.5rem 1rem 3rem;
+}
+
+.rr-format__intro {
+  text-align: center;
+  margin-bottom: 2.25rem;
+}
+
+.rr-format__label {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(229, 231, 235, 0.4);
+  margin-bottom: 0.5rem;
+}
+
+.rr-format__title {
+  font-size: clamp(1.3rem, 3.5vw, 1.8rem);
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  margin: 0 0 0.75rem;
+  color: #f3f4f6;
+}
+
+.rr-format__body {
+  font-size: 0.92rem;
+  color: rgba(229, 231, 235, 0.55);
+  max-width: 520px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* ── Card grid ── */
+
+.rr-format__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}
+
+/* ── Card ── */
+
+.rr-format__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 150px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.03);
+  transition: border-color 0.25s, box-shadow 0.25s, background 0.25s;
+  animation: cardIn 0.5s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.rr-format__card:nth-child(1) { animation-delay: 0.05s; }
+.rr-format__card:nth-child(2) { animation-delay: 0.15s; }
+.rr-format__card:nth-child(3) { animation-delay: 0.25s; }
+
+.rr-format__card[data-accent="purple"]:hover {
+  border-color: rgba(192, 132, 252, 0.4);
+  box-shadow: 0 0 24px -6px rgba(192, 132, 252, 0.35);
+  background: rgba(192, 132, 252, 0.05);
+}
+.rr-format__card[data-accent="orange"]:hover {
+  border-color: rgba(249, 115, 22, 0.4);
+  box-shadow: 0 0 24px -6px rgba(249, 115, 22, 0.35);
+  background: rgba(249, 115, 22, 0.05);
+}
+.rr-format__card[data-accent="pink"]:hover {
+  border-color: rgba(255, 126, 179, 0.4);
+  box-shadow: 0 0 24px -6px rgba(255, 126, 179, 0.35);
+  background: rgba(255, 126, 179, 0.05);
+}
+
+.rr-format__stat {
+  font-size: 2.6rem;
+  font-weight: 900;
+  letter-spacing: -0.03em;
+  line-height: 1;
+  margin-bottom: 0.4rem;
+  background: linear-gradient(135deg, #c084fc 20%, #f97316 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.rr-format__name {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: rgba(229, 231, 235, 0.45);
+}
+
+@keyframes cardIn {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ── Mobile ── */
+
+@media (max-width: 640px) {
+  .rr-format__cards {
+    grid-template-columns: 1fr;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+}

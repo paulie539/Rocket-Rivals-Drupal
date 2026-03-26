@@ -4,6 +4,33 @@ global:
     theme:
       css/global.css: {}
       css/hero.css: {}
+
+divisions:
+  version: 1.0
+  css:
+    theme:
       css/divisions.css: {}
       css/cards.css: {}
+
+schedule:
+  version: 1.0
+  css:
+    theme:
+      css/schedule.css: {}
+  js:
+    js/schedule.js: { attributes: { defer: true } }
+
+merch:
+  version: 1.0
+  css:
+    theme:
+      css/merch.css: {}
+  js:
+    js/merch.js: { attributes: { defer: true } }
+
+format:
+  version: 1.0
+  css:
+    theme:
+      css/format.css: {}
       css/home.css: {}

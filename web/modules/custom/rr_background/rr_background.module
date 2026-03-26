@@ -38,4 +38,25 @@ function rr_background_page_attachments(array &$attachments) {
   if (in_array($alias, $target_paths) || in_array($current_path, $target_paths)) {
     $attachments['#attached']['library'][] = 'rr_background/background';
   }
+
+  // ── Attach the divisions library on /divisions and all stats pages ──
+  $divisions_paths = ['/divisions', '/stats', '/stats/titans', '/stats/legends', '/stats/challengers'];
+  if (in_array($alias, $divisions_paths) || in_array($current_path, $divisions_paths)) {
+    $attachments['#attached']['library'][] = 'rocket_rivals/divisions';
+  }
+
+  // ── Attach the schedule library only on /schedule ──
+  if ($alias === '/schedule' || $current_path === '/schedule') {
+    $attachments['#attached']['library'][] = 'rocket_rivals/schedule';
+  }
+
+  // ── Attach the merch library only on /home ──
+  if ($alias === '/home' || $current_path === '/home') {
+    $attachments['#attached']['library'][] = 'rocket_rivals/merch';
+  }
+
+  // ── Attach the format library only on /home ──
+  if ($alias === '/home' || $current_path === '/home') {
+    $attachments['#attached']['library'][] = 'rocket_rivals/format';
+  }
 }
