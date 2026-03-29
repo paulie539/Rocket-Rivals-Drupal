@@ -1,0 +1,88 @@
+/* ── Site footer ──────────────────────────────────────────────── */
+
+#footer {
+  position: relative;
+  z-index: 10;
+  border-top: 1px solid rgba(168, 85, 247, 0.2);
+  background: rgba(8, 6, 14, 0.85);
+  backdrop-filter: blur(6px);
+  padding: 1rem 1.5rem;
+}
+
+.rr-footer__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 1rem;
+}
+
+.rr-footer__copy {
+  color: rgba(255, 255, 255, 0.35);
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+}
+
+/* ── Particle toggle button ───────────────────────────────────── */
+
+.rr-bg-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.35rem 0.85rem 0.35rem 0.65rem;
+  border: 1px solid rgba(168, 85, 247, 0.55);
+  border-radius: 999px;
+  background: rgba(168, 85, 247, 0.1);
+  color: rgba(168, 85, 247, 0.9);
+  font-size: 0.75rem;
+  font-family: inherit;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease,
+    box-shadow 0.2s ease;
+  box-shadow: 0 0 8px rgba(168, 85, 247, 0.2);
+}
+
+.rr-bg-toggle:hover {
+  background: rgba(168, 85, 247, 0.22);
+  border-color: rgba(168, 85, 247, 0.85);
+  box-shadow: 0 0 14px rgba(168, 85, 247, 0.45);
+}
+
+/* The glowing dot icon */
+.rr-bg-toggle__icon {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: rgba(168, 85, 247, 0.9);
+  box-shadow: 0 0 6px rgba(168, 85, 247, 0.9), 0 0 12px rgba(168, 85, 247, 0.5);
+  transition: background 0.2s ease, box-shadow 0.2s ease;
+  flex-shrink: 0;
+}
+
+/* ── OFF state ────────────────────────────────────────────────── */
+
+.rr-bg-toggle.is-off {
+  border-color: rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.04);
+  color: rgba(255, 255, 255, 0.3);
+  box-shadow: none;
+}
+
+.rr-bg-toggle.is-off:hover {
+  border-color: rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.08);
+  color: rgba(255, 255, 255, 0.5);
+  box-shadow: none;
+}
+
+.rr-bg-toggle.is-off .rr-bg-toggle__icon {
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: none;
+}

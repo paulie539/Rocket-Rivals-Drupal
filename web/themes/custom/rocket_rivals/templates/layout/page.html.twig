@@ -32,4 +32,10 @@
     {{ page.content }}
   </main>
 
+  {% if page.footer %}
+    <footer id="footer" role="contentinfo">
+        {{ page.footer }}
+    </footer>
+  {% endif %}
+
 </div>

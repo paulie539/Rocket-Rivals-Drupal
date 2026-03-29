@@ -4,6 +4,13 @@ background:
     theme:
       css/rr_background.css: {}
   js:
-    js/rr_background.js: {}
+    js/rr_background.js: { attributes: { defer: true } }
+  dependencies:
+    - core/drupal
+
+footer:
+  version: 1.0
+  js:
+    js/rr_bg_toggle.js: { attributes: { defer: true } }
   dependencies:
     - core/drupal
