@@ -6,6 +6,21 @@
  */
 
 /**
+ * Implements hook_theme().
+ */
+function rr_background_theme(): array {
+  return [
+    'rr_merch_carousel' => [
+      'variables' => [
+        'headline'    => NULL,
+        'subheadline' => NULL,
+        'slides'      => [],
+      ],
+    ],
+  ];
+}
+
+/**
  * Implements hook_page_attachments().
  *
  * This hook fires on every page load. We check the current path

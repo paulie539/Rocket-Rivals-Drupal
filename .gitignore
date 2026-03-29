@@ -36,7 +36,7 @@ node_modules/
 # ── Ignore local environment-specific files (secrets) ──
 .env
 .env.local
-/web/sites/default/settings.php
+# /web/sites/default/settings.php  # Unignored for Pantheon deployment
 /web/sites/default/settings.local.php
 /web/sites/*/services.local.yml
 

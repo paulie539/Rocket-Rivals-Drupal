@@ -880,6 +880,25 @@ if (getenv('IS_DDEV_PROJECT') == 'true' && file_exists(__DIR__ . '/settings.ddev
   include __DIR__ . '/settings.ddev.php';
 }
 
+// Pantheon environment settings.
+if (isset($_ENV['PANTHEON_ENVIRONMENT'])) {
+  $pressflow = json_decode($_ENV['PRESSFLOW_SETTINGS'], TRUE);
+  $db = $pressflow['databases']['default']['default'];
+  $databases['default']['default'] = [
+    'driver'    => 'mysql',
+    'database'  => $db['database'],
+    'username'  => $db['username'],
+    'password'  => $db['password'],
+    'host'      => $db['host'],
+    'port'      => $db['port'],
+    'prefix'    => '',
+    'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
+    'driver'    => 'mysql',
+  ];
+  $settings['hash_salt'] = $pressflow['drupal']['settings']['hash_salt'];
+  $settings['config_sync_directory'] = '../config/sync';
+}
+
 /**
  * Load local development override configuration, if available.
  *
