@@ -5,6 +5,12 @@ global:
       css/global.css: {}
       css/hero.css: {}
 
+footer:
+  version: 1.0
+  css:
+    theme:
+      css/footer.css: {}
+
 divisions:
   version: 1.0
   css:

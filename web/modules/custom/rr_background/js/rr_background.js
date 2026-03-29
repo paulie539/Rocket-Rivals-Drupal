@@ -15,9 +15,13 @@
       // multiple times by Drupal's AJAX system.
       if (document.getElementById('bg-canvas')) return;
 
+      // Read saved user preference (default: enabled).
+      const bgEnabled = localStorage.getItem('rr_bg_enabled') !== 'false';
+
       // ── Create and inject the canvas element ──
       const canvas = document.createElement('canvas');
       canvas.id = 'bg-canvas';
+      canvas.setAttribute('aria-hidden', 'true');
       document.body.prepend(canvas);
 
       const ctx = canvas.getContext('2d');
@@ -41,7 +45,8 @@
       ];
 
       // ── Build the particle pool ──
-      const PARTICLE_COUNT = 80;
+      // Fewer particles on mobile to keep CPU/battery reasonable
+      const PARTICLE_COUNT = window.innerWidth < 768 ? 35 : 80;
       const particles = [];
 
       for (let i = 0; i < PARTICLE_COUNT; i++) {
@@ -57,6 +62,8 @@
       }
 
       // ── Animation loop ──
+      var rafId = null;
+
       function draw() {
         ctx.clearRect(0, 0, canvas.width, canvas.height);
 
@@ -79,10 +86,37 @@
           if (p.x > canvas.width + 5) { p.x = -5; }
         });
 
-        requestAnimationFrame(draw);
+        rafId = requestAnimationFrame(draw);
       }
 
-      draw();
+      // Pause animation when tab is not visible to save CPU/battery
+      document.addEventListener('visibilitychange', function () {
+        if (document.hidden) {
+          cancelAnimationFrame(rafId);
+          rafId = null;
+        } else if (!rafId && localStorage.getItem('rr_bg_enabled') !== 'false') {
+          draw();
+        }
+      });
+
+      // Listen for footer toggle button events.
+      document.addEventListener('rr:bg-toggle', function (e) {
+        if (e.detail.enabled) {
+          canvas.style.display = '';
+          if (!rafId) draw();
+        } else {
+          cancelAnimationFrame(rafId);
+          rafId = null;
+          canvas.style.display = 'none';
+        }
+      });
+
+      // Start only if preference allows.
+      if (bgEnabled) {
+        draw();
+      } else {
+        canvas.style.display = 'none';
+      }
     }
   };
 
