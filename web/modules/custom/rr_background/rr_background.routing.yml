@@ -1,0 +1,9 @@
+rr_background.stream_status:
+  path: '/rr/stream-status'
+  defaults:
+    _controller: '\Drupal\rr_background\Controller\StreamStatusController::status'
+    _title: 'Stream Status'
+  requirements:
+    _access: 'TRUE'
+  options:
+    no_cache: TRUE

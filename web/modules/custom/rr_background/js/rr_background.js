@@ -35,17 +35,17 @@
       window.addEventListener('resize', resize);
 
       // ── Particle colours ──
-      // Adjust these to match your site's theme colours
       const COLORS = [
         'rgba(168, 85,  247,',   /* purple  */
         'rgba(251, 146,  60,',   /* orange  */
         'rgba(255, 215,   0,',   /* gold    */
         'rgba(236,  72, 153,',   /* pink    */
-        /* 'rgba(255, 255, 255,',   white   */
+        /* 'rgba(255, 255, 255,'   white   */      // Note: interferes with text readability
       ];
 
       // ── Build the particle pool ──
-      // Fewer particles on mobile to keep CPU/battery reasonable
+
+      // Reduce particles on mobile to keep CPU/battery reasonable
       const PARTICLE_COUNT = window.innerWidth < 768 ? 35 : 80;
       const particles = [];
 

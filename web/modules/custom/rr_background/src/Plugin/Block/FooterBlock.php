@@ -24,13 +24,15 @@ class FooterBlock extends BlockBase {
       '#template' => '
         <div class="rr-footer__inner">
           <span class="rr-footer__copy">&copy; {{ year }} Rocket Rivals. All rights reserved</span>
-          <button id="rr-bg-toggle"
-                  class="rr-bg-toggle"
-                  aria-pressed="true"
-                  title="Toggle background particles">
-            <span class="rr-bg-toggle__icon" aria-hidden="true"></span>
-            <span class="rr-bg-toggle__label">Toggle background effect</span>
-          </button>
+          <div class="rr-footer__toggle">
+            <button id="rr-bg-toggle"
+                    class="rr-bg-toggle"
+                    aria-pressed="true"
+                    title="Toggle background particles">
+              <span class="rr-bg-toggle__icon" aria-hidden="true"></span>
+              <span class="rr-bg-toggle__label">Toggle background effect</span>
+            </button>
+          </div>
         </div>
       ',
       '#context' => [

@@ -36,7 +36,7 @@ node_modules/
 # ── Ignore local environment-specific files (secrets) ──
 .env
 .env.local
-/web/sites/default/settings.php
+# /web/sites/default/settings.php  # Unignored for Pantheon deployment
 /web/sites/default/settings.local.php
 /web/sites/*/services.local.yml
 
@@ -68,3 +68,19 @@ Desktop.ini
 # ── Ignore Claude data  ──
 .claude
 CLAUDE.md
+
+# ── Database and archive dumps ──
+*.sql.gz
+*.tar.gz
+*.sql
+
+# ── Pantheon environment credential files ──
+/web/sites/default/pantheon_db_host,
+/web/sites/default/pantheon_db_name,
+/web/sites/default/pantheon_db_pass,
+/web/sites/default/pantheon_db_user,
+/web/sites/default/mysql,
+/web/sites/default/,
+
+# ── Local settings with secrets (credentials go in settings.local.php) ──
+/web/sites/default/settings.php

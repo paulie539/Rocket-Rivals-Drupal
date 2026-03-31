@@ -1,0 +1,54 @@
+{#
+/**
+ * @file
+ * Template for the Rocket Rivals merch carousel block.
+ *
+ * Available variables:
+ * - headline: Main heading text.
+ * - subheadline: Sub-heading text.
+ * - slides: Array of slide data, each with keys: url, src, alt.
+ *
+ * To override in a theme, copy this file to:
+ *   web/themes/custom/rocket_rivals/templates/rr-merch-carousel.html.twig
+ */
+#}
+<div class="rr-merch">
+  <header class="rr-merch__header">
+    <p><span class="rr-merch__eyebrow">{{ 'Merch'|t }}</span></p>
+    <h2 class="rr-merch__headline">{{ headline }}</h2>
+    <p class="rr-merch__sub">{{ subheadline }}</p>
+  </header>
+  <div class="rr-carousel">
+    <div class="rr-carousel__viewport">
+      <div class="rr-carousel__track">
+        {% for slide in slides %}
+          <div class="rr-carousel__slide">
+            <a href="{{ slide.url }}" target="_blank" rel="noopener noreferrer">
+              <img src="{{ slide.src }}" alt="{{ slide.alt }}" loading="lazy">
+            </a>
+          </div>
+        {% endfor %}
+      </div>
+      <div class="rr-carousel__progress">
+        <div class="rr-carousel__progress-bar">&nbsp;</div>
+      </div>
+    </div>
+    <button class="rr-carousel__arrow rr-carousel__arrow--prev"
+            type="button"
+            aria-label="{{ 'Previous'|t }}"
+            data-tooltip="{{ 'Previous'|t }}"
+            data-tooltip-pos="above">&#8592;</button>
+    <button class="rr-carousel__arrow rr-carousel__arrow--next"
+            type="button"
+            aria-label="{{ 'Next'|t }}"
+            data-tooltip="{{ 'Next'|t }}"
+            data-tooltip-pos="above">&#8594;</button>
+    <div class="rr-carousel__dots">
+      {% for slide in slides %}
+        <button class="rr-carousel__dot"
+                type="button"
+                aria-label="{{ 'Slide @n'|t({'@n': loop.index}) }}"></button>
+      {% endfor %}
+    </div>
+  </div>
+</div>

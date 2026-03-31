@@ -18,15 +18,29 @@
  */
 #}
 <nav class="hero-nav" aria-label="{{ 'Site navigation'|t }}">
+  {{ attach_library('rr_background/live_status') }}
   {% for item in items %}
     {%
       set is_discord = 'discord' in item.url.toString()
     %}
-    <a href="{{ item.url }}"
-       {% if is_discord %}class="discord-button"{% endif %}
-       {% if item.url.isExternal() %}target="_blank" rel="noopener noreferrer"{% endif %}
-       {% if item.in_active_trail %}aria-current="page"{% endif %}>
-      {{- item.title -}}
-    </a>
+    {%
+      set is_schedule = 'schedule' in item.url.toString()
+    %}
+    {% if is_schedule %}
+      <span class="rr-nav-schedule-wrapper">
+        <a href="{{ item.url }}"
+           {% if item.in_active_trail %}aria-current="page"{% endif %}>
+          {{- item.title -}}
+        </a>
+        <div id="rr-live-status" aria-live="polite" aria-atomic="true"></div>
+      </span>
+    {% else %}
+      <a href="{{ item.url }}"
+         {% if is_discord %}class="discord-button"{% endif %}
+         {% if item.url.isExternal() %}target="_blank" rel="noopener noreferrer"{% endif %}
+         {% if item.in_active_trail %}aria-current="page"{% endif %}>
+        {{- item.title -}}
+      </a>
+    {% endif %}
   {% endfor %}
 </nav>
