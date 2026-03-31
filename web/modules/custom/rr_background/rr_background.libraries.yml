@@ -14,3 +14,13 @@ footer:
     js/rr_bg_toggle.js: { attributes: { defer: true } }
   dependencies:
     - core/drupal
+
+live_status:
+  version: 1.0
+  css:
+    component:
+      css/rr_live_status.css: {}
+  js:
+    js/rr_live_status.js: { attributes: { defer: true } }
+  dependencies:
+    - core/drupal

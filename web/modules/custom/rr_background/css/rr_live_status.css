@@ -1,0 +1,78 @@
+/* Wrapper around the Schedule nav link */
+.rr-nav-schedule-wrapper {
+  position: relative;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Live indicator sits just below the Schedule link */
+#rr-live-status {
+  position: absolute;
+  top: calc(100% + 3px);
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+#rr-live-status:not(:empty) {
+  pointer-events: auto;
+}
+
+.rr-live-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(145, 70, 255, 0.12);
+  border: 1px solid rgba(145, 70, 255, 0.35);
+  border-radius: 4px;
+  padding: 4px 10px 4px 8px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  line-height: 1;
+  transition: background 0.2s ease, border-color 0.2s ease;
+  white-space: nowrap;
+}
+
+.rr-live-badge:hover,
+.rr-live-badge:focus {
+  background: rgba(145, 70, 255, 0.25);
+  border-color: rgba(145, 70, 255, 0.6);
+  color: #fff;
+  text-decoration: none;
+  outline: none;
+}
+
+.rr-live-dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #e91916;
+  flex-shrink: 0;
+  animation: rr-live-pulse 1.6s ease-in-out infinite;
+}
+
+@keyframes rr-live-pulse {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(233, 25, 22, 0.6);
+  }
+  50% {
+    opacity: 0.7;
+    transform: scale(0.8);
+    box-shadow: 0 0 0 4px rgba(233, 25, 22, 0);
+  }
+}
+
+.rr-live-text {
+  color: #e91916;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+}
