@@ -45,7 +45,7 @@ class StreamStatusController extends ControllerBase {
 
     try {
       $response = \Drupal::httpClient()->get('https://api.twitch.tv/helix/streams', [
-        'query' => ['user_login' => 'itsjstn'],
+        'query' => ['user_login' => 'rocket_rivals'],
         'headers' => [
           'Client-ID' => $client_id,
           'Authorization' => 'Bearer ' . $token,

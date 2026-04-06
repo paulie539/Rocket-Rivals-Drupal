@@ -27,9 +27,11 @@ class TwitchEmbedBlock extends BlockBase {
     return [
       '#type' => 'inline_template',
       '#template' => '
-        <p><a href="https://www.twitch.tv/rocket_rivals">Rocket Rivals on Twitch</a></p>
-        <div class="twitch-embed-wrapper"
-             data-twitch-src="https://player.twitch.tv/?channel=Rocket_Rivals&parent={{ host }}">
+        <div class="rr-twitch-panel">
+          <p><a href="https://www.twitch.tv/rocket_rivals">Rocket Rivals on Twitch</a></p>
+          <div class="twitch-embed-wrapper"
+               data-twitch-src="https://player.twitch.tv/?channel=Rocket_Rivals&parent={{ host }}">
+          </div>
         </div>
       ',
       '#context' => [

@@ -18,7 +18,7 @@
           .then(function (data) {
             if (data.live) {
               el.innerHTML =
-                '<a href="https://www.twitch.tv/itsjstn"' +
+                '<a href="https://www.twitch.tv/rocket_rivals"' +
                 '   class="rr-live-badge"' +
                 '   target="_blank"' +
                 '   rel="noopener noreferrer">' +

@@ -2,6 +2,30 @@
    SCHEDULE PAGE — Division selector
    ══════════════════════════════════════════ */
 
+/* ── Twitch embed panel: concentric rings + core glow (Twitch purple) ── */
+
+.rr-twitch-panel {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 1.5rem 1.75rem;
+  border-radius: 10px;
+  background:
+    radial-gradient(circle at 50% 50%, transparent 38.5%, rgba(145, 71, 255, 0.15) 39.5%, rgba(145, 71, 255, 0.15) 41.5%, transparent 42.5%),
+    radial-gradient(circle at 50% 50%, transparent 57%,   rgba(145, 71, 255, 0.09) 58%,   rgba(145, 71, 255, 0.09) 60%,   transparent 61%),
+    radial-gradient(circle at 50% 50%, rgba(145, 71, 255, 0.22) 0%, rgba(145, 71, 255, 0.06) 28%, transparent 52%),
+    linear-gradient(135deg, #0e0820 0%, #0a0618 100%);
+  box-shadow:
+    inset 0 0 60px rgba(145, 71, 255, 0.07),
+    inset 0 -1px 0  rgba(145, 71, 255, 0.18);
+}
+
+.rr-twitch-panel .twitch-embed-wrapper {
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1px solid rgba(145, 71, 255, 0.2);
+  box-shadow: 0 4px 32px rgba(0, 0, 0, 0.55);
+}
+
 .rr-schedule-wrapper {
   max-width: 860px;
   margin: 0 auto;
@@ -86,6 +110,8 @@
 
 .rr-schedule-panel {
   display: none;
+  border-radius: 10px;
+  padding: 1.5rem 1.75rem;
   animation: scheduleReveal 0.4s cubic-bezier(0.22, 1, 0.36, 1) both;
 }
 
@@ -102,14 +128,49 @@
   box-shadow: 0 4px 32px rgba(0, 0, 0, 0.55);
 }
 
-/* ── Accent border beneath image matches active division ── */
+/* ── Division panel backgrounds: concentric rings + core glow, per-division color ── */
+
+.rr-schedule-panel[data-division="titans"] {
+  background:
+    radial-gradient(circle at 50% 50%, transparent 38.5%, rgba(255, 126, 179, 0.15) 39.5%, rgba(255, 126, 179, 0.15) 41.5%, transparent 42.5%),
+    radial-gradient(circle at 50% 50%, transparent 57%,   rgba(255, 126, 179, 0.09) 58%,   rgba(255, 126, 179, 0.09) 60%,   transparent 61%),
+    radial-gradient(circle at 50% 50%, rgba(255, 126, 179, 0.22) 0%, rgba(255, 126, 179, 0.06) 28%, transparent 52%),
+    linear-gradient(135deg, #180d14 0%, #0e0812 100%);
+  box-shadow:
+    inset 0 0 60px rgba(255, 126, 179, 0.07),
+    inset 0 -1px 0  rgba(255, 126, 179, 0.18);
+}
 
 .rr-schedule-panel[data-division="titans"] img {
   border-top: 2px solid #ff7eb3;
 }
+
+.rr-schedule-panel[data-division="legends"] {
+  background:
+    radial-gradient(circle at 50% 50%, transparent 38.5%, rgba(249, 115, 22, 0.15) 39.5%, rgba(249, 115, 22, 0.15) 41.5%, transparent 42.5%),
+    radial-gradient(circle at 50% 50%, transparent 57%,   rgba(249, 115, 22, 0.09) 58%,   rgba(249, 115, 22, 0.09) 60%,   transparent 61%),
+    radial-gradient(circle at 50% 50%, rgba(249, 115, 22, 0.22) 0%, rgba(249, 115, 22, 0.06) 28%, transparent 52%),
+    linear-gradient(135deg, #160c04 0%, #0f0906 100%);
+  box-shadow:
+    inset 0 0 60px rgba(249, 115, 22, 0.07),
+    inset 0 -1px 0  rgba(249, 115, 22, 0.18);
+}
+
 .rr-schedule-panel[data-division="legends"] img {
   border-top: 2px solid #f97316;
 }
+
+.rr-schedule-panel[data-division="challengers"] {
+  background:
+    radial-gradient(circle at 50% 50%, transparent 38.5%, rgba(192, 132, 252, 0.15) 39.5%, rgba(192, 132, 252, 0.15) 41.5%, transparent 42.5%),
+    radial-gradient(circle at 50% 50%, transparent 57%,   rgba(192, 132, 252, 0.09) 58%,   rgba(192, 132, 252, 0.09) 60%,   transparent 61%),
+    radial-gradient(circle at 50% 50%, rgba(192, 132, 252, 0.22) 0%, rgba(192, 132, 252, 0.06) 28%, transparent 52%),
+    linear-gradient(135deg, #0c0618 0%, #10091e 100%);
+  box-shadow:
+    inset 0 0 60px rgba(192, 132, 252, 0.07),
+    inset 0 -1px 0  rgba(192, 132, 252, 0.18);
+}
+
 .rr-schedule-panel[data-division="challengers"] img {
   border-top: 2px solid #c084fc;
 }
