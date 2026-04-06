@@ -1,0 +1,22 @@
+uuid: f00bf79e-72f2-479b-b29a-4e56420b1805
+langcode: en
+status: false
+dependencies:
+  module:
+    - help
+active_version: f0baefd21cddb437
+versioned_properties:
+  active:
+    settings:
+      default_settings:
+        id: help_block
+        label: Help
+        label_display: '0'
+        provider: help
+    fallback_metadata:
+      slot_definitions: null
+label: Help
+id: block.help_block
+provider: help
+source: block
+source_local_id: help_block

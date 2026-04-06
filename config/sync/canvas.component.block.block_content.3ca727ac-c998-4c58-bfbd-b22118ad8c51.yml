@@ -1,0 +1,25 @@
+uuid: 049e94c5-bbf5-4977-81f5-8b5848b78414
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:3ca727ac-c998-4c58-bfbd-b22118ad8c51'
+  module:
+    - block_content
+active_version: 5f41abe6e65a651d
+versioned_properties:
+  active:
+    settings:
+      default_settings:
+        id: 'block_content:3ca727ac-c998-4c58-bfbd-b22118ad8c51'
+        label: 'Home (Logo)'
+        label_display: '0'
+        provider: block_content
+        view_mode: full
+    fallback_metadata:
+      slot_definitions: null
+label: 'Home (Logo)'
+id: block.block_content.3ca727ac-c998-4c58-bfbd-b22118ad8c51
+provider: block_content
+source: block
+source_local_id: 'block_content:3ca727ac-c998-4c58-bfbd-b22118ad8c51'

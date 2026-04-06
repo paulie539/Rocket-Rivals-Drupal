@@ -1,0 +1,25 @@
+uuid: 5a9e3432-26f9-4ed4-aa66-c4e90e354679
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:bf59f617-34c4-4f4c-aeb9-691be5459b61'
+  module:
+    - block_content
+active_version: 1299754e0c21c92f
+versioned_properties:
+  active:
+    settings:
+      default_settings:
+        id: 'block_content:bf59f617-34c4-4f4c-aeb9-691be5459b61'
+        label: 'Twitch Schedule'
+        label_display: '0'
+        provider: block_content
+        view_mode: full
+    fallback_metadata:
+      slot_definitions: null
+label: 'Twitch Schedule'
+id: block.block_content.bf59f617-34c4-4f4c-aeb9-691be5459b61
+provider: block_content
+source: block
+source_local_id: 'block_content:bf59f617-34c4-4f4c-aeb9-691be5459b61'

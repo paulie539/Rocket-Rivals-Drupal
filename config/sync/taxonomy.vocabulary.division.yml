@@ -1,0 +1,9 @@
+uuid: 50b90cd0-1e07-43d8-8b88-405b2c7983b3
+langcode: en
+status: true
+dependencies: {  }
+name: Divisions
+vid: division
+description: 'List of Rocket Rivals rank divisions'
+weight: 0
+new_revision: false

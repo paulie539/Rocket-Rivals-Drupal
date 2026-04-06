@@ -1,0 +1,17 @@
+_core:
+  default_config_hash: KZiV2LB312xgJBphfq5BTjmp16xiR5KM8InBJ-pff7Y
+favicon:
+  mimetype: image/png
+  path: 'public://rocketrivalsszn7_0_1.png'
+  url: ''
+  use_default: false
+features:
+  comment_user_picture: true
+  comment_user_verification: true
+  favicon: true
+  node_user_picture: true
+logo:
+  path: 'public://rocketrivalsszn7_2.png'
+  url: null
+  use_default: false
+scheme: light

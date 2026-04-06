@@ -1,0 +1,12 @@
+uuid: 1cf5d2ee-51b9-46a1-a4c3-5757288a7079
+langcode: en
+status: true
+dependencies: {  }
+name: 'Rocket Rivals'
+configEntityTypeId: component
+weight: 0
+items:
+  - block.rr_footer
+  - block.rr_live_status
+  - block.rr_merch_carousel
+  - block.rr_twitch_embed

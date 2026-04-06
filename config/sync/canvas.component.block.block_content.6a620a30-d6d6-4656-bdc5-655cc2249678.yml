@@ -1,0 +1,25 @@
+uuid: 39566d7a-ac45-450e-a430-c9cb330e1307
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:6a620a30-d6d6-4656-bdc5-655cc2249678'
+  module:
+    - block_content
+active_version: 956ca02a21ec30c0
+versioned_properties:
+  active:
+    settings:
+      default_settings:
+        id: 'block_content:6a620a30-d6d6-4656-bdc5-655cc2249678'
+        label: 'Recent Match Results'
+        label_display: '0'
+        provider: block_content
+        view_mode: full
+    fallback_metadata:
+      slot_definitions: null
+label: 'Recent Match Results'
+id: block.block_content.6a620a30-d6d6-4656-bdc5-655cc2249678
+provider: block_content
+source: block
+source_local_id: 'block_content:6a620a30-d6d6-4656-bdc5-655cc2249678'

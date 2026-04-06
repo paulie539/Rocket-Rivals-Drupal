@@ -1,0 +1,28 @@
+uuid: ca027f31-33ab-4be2-bb28-742c29490afb
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:bf59f617-34c4-4f4c-aeb9-691be5459b61'
+  module:
+    - block_content
+    - system
+  theme:
+    - gin
+id: gin_twitchschedule
+theme: gin
+region: content
+weight: 1
+provider: null
+plugin: 'block_content:bf59f617-34c4-4f4c-aeb9-691be5459b61'
+settings:
+  id: 'block_content:bf59f617-34c4-4f4c-aeb9-691be5459b61'
+  label: 'Twitch Schedule'
+  label_display: visible
+  provider: block_content
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /schedule

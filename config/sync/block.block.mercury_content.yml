@@ -1,0 +1,22 @@
+uuid: b4902c49-a1da-4139-882c-8db295a17c67
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - mercury
+_core:
+  default_config_hash: hBHXB7hC05XU7pDYzETt-GUcpFlogK1gkjyAsg0Ym58
+id: mercury_content
+theme: mercury
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

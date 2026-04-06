@@ -1,0 +1,25 @@
+uuid: f986bac8-3225-4852-b507-b71439275986
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:7b81ea09-90a5-44d5-ba9b-76dbf40f7c5d'
+  module:
+    - block_content
+active_version: e63ae63ebed4cd93
+versioned_properties:
+  active:
+    settings:
+      default_settings:
+        id: 'block_content:7b81ea09-90a5-44d5-ba9b-76dbf40f7c5d'
+        label: 'Twitch Embed'
+        label_display: '0'
+        provider: block_content
+        view_mode: full
+    fallback_metadata:
+      slot_definitions: null
+label: 'Twitch Embed'
+id: block.block_content.7b81ea09-90a5-44d5-ba9b-76dbf40f7c5d
+provider: block_content
+source: block
+source_local_id: 'block_content:7b81ea09-90a5-44d5-ba9b-76dbf40f7c5d'

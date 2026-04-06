@@ -1,0 +1,61 @@
+uuid: 293dabcd-f14b-42ac-9a52-16e299754ae9
+langcode: en
+status: true
+dependencies:
+  theme:
+    - bootstrap
+active_version: 623fb6b398ae496c
+versioned_properties:
+  active:
+    settings:
+      prop_field_definitions:
+        html_tag:
+          required: false
+          field_type: string
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value: null
+          expression: ℹ︎string␟value
+        background_image:
+          required: false
+          field_type: string
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value: null
+          expression: ℹ︎string␟value
+        background_color:
+          required: false
+          field_type: string
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: string_textfield
+          default_value: null
+          expression: ℹ︎string␟value
+        full_width:
+          required: false
+          field_type: boolean
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: boolean_checkbox
+          default_value: null
+          expression: ℹ︎boolean␟value
+        container:
+          required: false
+          field_type: boolean
+          field_storage_settings: {  }
+          field_instance_settings: {  }
+          field_widget: boolean_checkbox
+          default_value: null
+          expression: ℹ︎boolean␟value
+    fallback_metadata:
+      slot_definitions:
+        content:
+          title: Content
+          description: 'The content'
+label: Container
+id: sdc.bootstrap.container
+provider: bootstrap
+source: sdc
+source_local_id: 'bootstrap:container'

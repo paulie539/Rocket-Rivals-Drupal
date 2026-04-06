@@ -1,0 +1,22 @@
+uuid: 602be34b-5f44-4bc3-8da1-9ca632f2e23b
+langcode: en
+status: true
+dependencies:
+  module:
+    - rr_background
+active_version: c48f523429acf696
+versioned_properties:
+  active:
+    settings:
+      default_settings:
+        id: rr_footer
+        label: 'Rocket Rivals Footer'
+        label_display: '0'
+        provider: rr_background
+    fallback_metadata:
+      slot_definitions: null
+label: 'Rocket Rivals Footer'
+id: block.rr_footer
+provider: rr_background
+source: block
+source_local_id: rr_footer

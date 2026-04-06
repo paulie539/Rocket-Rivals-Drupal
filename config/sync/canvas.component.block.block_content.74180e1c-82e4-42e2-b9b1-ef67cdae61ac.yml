@@ -1,0 +1,25 @@
+uuid: 29c0dad7-af5b-44cf-a540-50f6edbb4f47
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:74180e1c-82e4-42e2-b9b1-ef67cdae61ac'
+  module:
+    - block_content
+active_version: 7dd0189a36cdc735
+versioned_properties:
+  active:
+    settings:
+      default_settings:
+        id: 'block_content:74180e1c-82e4-42e2-b9b1-ef67cdae61ac'
+        label: 'Titans Icon'
+        label_display: '0'
+        provider: block_content
+        view_mode: full
+    fallback_metadata:
+      slot_definitions: null
+label: 'Titans Icon'
+id: block.block_content.74180e1c-82e4-42e2-b9b1-ef67cdae61ac
+provider: block_content
+source: block
+source_local_id: 'block_content:74180e1c-82e4-42e2-b9b1-ef67cdae61ac'

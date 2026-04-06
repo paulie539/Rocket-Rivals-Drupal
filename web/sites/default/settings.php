@@ -860,6 +860,11 @@ $settings['migrate_node_migrate_type_classic'] = FALSE;
 #   include $app_root . '/' . $site_path . '/settings.local.php';
 # }
 /**
+ * Config sync directory (all environments).
+ */
+$settings['config_sync_directory'] = '../config/sync';
+
+/**
  * Pantheon environment settings.
  */
 if (isset($_ENV['PANTHEON_ENVIRONMENT'])) {
@@ -880,7 +885,7 @@ if (isset($_ENV['PANTHEON_ENVIRONMENT'])) {
     '^.+\.pantheonsite\.io$',
   ];
   $settings['file_public_path']  = 'sites/default/files';
-  $settings['config_sync_directory'] = 'sites/default/files/sync';
+  $settings['config_sync_directory'] = '../config/sync';
 }
 
 /**

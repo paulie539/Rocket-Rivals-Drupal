@@ -1,0 +1,28 @@
+uuid: 2e9bed70-ef80-4d70-b4fc-81b2a02559d8
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:bf59f617-34c4-4f4c-aeb9-691be5459b61'
+  module:
+    - block_content
+    - system
+  theme:
+    - rocket_rivals
+id: rocket_rivals_twitchschedule
+theme: rocket_rivals
+region: content
+weight: 1
+provider: null
+plugin: 'block_content:bf59f617-34c4-4f4c-aeb9-691be5459b61'
+settings:
+  id: 'block_content:bf59f617-34c4-4f4c-aeb9-691be5459b61'
+  label: 'Twitch Schedule'
+  label_display: visible
+  provider: block_content
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /schedule

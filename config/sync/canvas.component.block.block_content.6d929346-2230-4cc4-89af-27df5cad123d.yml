@@ -1,0 +1,25 @@
+uuid: 9ef56828-a701-4e13-8c94-11576c160c36
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:6d929346-2230-4cc4-89af-27df5cad123d'
+  module:
+    - block_content
+active_version: 0433a917277c316e
+versioned_properties:
+  active:
+    settings:
+      default_settings:
+        id: 'block_content:6d929346-2230-4cc4-89af-27df5cad123d'
+        label: 'Legends Icon'
+        label_display: '0'
+        provider: block_content
+        view_mode: full
+    fallback_metadata:
+      slot_definitions: null
+label: 'Legends Icon'
+id: block.block_content.6d929346-2230-4cc4-89af-27df5cad123d
+provider: block_content
+source: block
+source_local_id: 'block_content:6d929346-2230-4cc4-89af-27df5cad123d'

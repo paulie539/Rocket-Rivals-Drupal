@@ -1,0 +1,32 @@
+uuid: 3b2bb275-13ad-44d8-9d7e-addc9ec31981
+langcode: en
+status: true
+dependencies: {  }
+name: 'Content block'
+configEntityTypeId: component
+weight: 0
+items:
+  - block.block_content.01e627d0-49c1-4c89-b367-236d04dc9197
+  - block.block_content.03412f2c-9fa4-43a1-a130-545cb3beabd6
+  - block.block_content.2ae8da03-bd94-4e2c-8c84-7556ea2fa8e9
+  - block.block_content.3ca727ac-c998-4c58-bfbd-b22118ad8c51
+  - block.block_content.3d3cf9be-0991-4985-bfc6-1636fbf0620e
+  - block.block_content.48cfa0e3-8fec-4cb4-9d64-7c944e43e9fd
+  - block.block_content.62826172-d20b-4f94-b742-22a1d65f144e
+  - block.block_content.6a620a30-d6d6-4656-bdc5-655cc2249678
+  - block.block_content.6d929346-2230-4cc4-89af-27df5cad123d
+  - block.block_content.74180e1c-82e4-42e2-b9b1-ef67cdae61ac
+  - block.block_content.7b81ea09-90a5-44d5-ba9b-76dbf40f7c5d
+  - block.block_content.83a59ef7-05e0-46ba-91bb-596b6f71b115
+  - block.block_content.9241e8ce-e78b-40af-b8b9-3ee13d120f48
+  - block.block_content.9c58e5a9-d1b0-4faf-baec-181201f62524
+  - block.block_content.a29646c9-b7f8-4f2c-859e-48594e6dd416
+  - block.block_content.b1ca7fb8-f0ed-4a3c-a430-80bc57e58d27
+  - block.block_content.b6465d5c-f7f1-47be-97c6-dafcd35b2206
+  - block.block_content.bf59f617-34c4-4f4c-aeb9-691be5459b61
+  - block.block_content.ca828935-cb70-4a62-b76a-f3c5aaf9e695
+  - block.block_content.cbc477a7-e4aa-469f-aa51-24480cbfa8f7
+  - block.block_content.d7ffd0b2-7a9c-419f-b29e-61c4f1a6f52a
+  - block.block_content.dff2ac0d-780a-42bb-8534-50ba8bd13a86
+  - block.block_content.e0897924-2425-407d-a04b-25cdb8101b66
+  - block.block_content.ea05c967-0d76-47a5-8840-eb46e677d503

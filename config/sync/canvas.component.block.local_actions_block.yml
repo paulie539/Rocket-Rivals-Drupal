@@ -1,0 +1,20 @@
+uuid: 834d9788-9e14-42ad-aa8e-c0983bbed31e
+langcode: en
+status: false
+dependencies: {  }
+active_version: 29753123eb31b8ab
+versioned_properties:
+  active:
+    settings:
+      default_settings:
+        id: local_actions_block
+        label: 'Primary admin actions'
+        label_display: '0'
+        provider: core
+    fallback_metadata:
+      slot_definitions: null
+label: 'Primary admin actions'
+id: block.local_actions_block
+provider: core
+source: block
+source_local_id: local_actions_block

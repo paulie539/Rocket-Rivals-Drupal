@@ -1,0 +1,22 @@
+uuid: f83731a3-9513-42f7-b9c6-f5435581b750
+langcode: en
+status: true
+dependencies:
+  theme:
+    - mercury
+_core:
+  default_config_hash: BCWhood0xXFQYqxFgL1spXdb9KeIuXH1YvTdjIEedDg
+id: mercury_secondary_local_tasks
+theme: mercury
+region: content
+weight: 0
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Secondary tabs'
+  label_display: '0'
+  provider: core
+  primary: false
+  secondary: true
+visibility: {  }

@@ -1,0 +1,29 @@
+uuid: b7df075b-2697-4261-8eba-391cce4c62a1
+langcode: en
+status: false
+dependencies: {  }
+machineName: code
+name: code
+required: {  }
+props: {  }
+slots: {  }
+js:
+  original: |
+    // See https://project.pages.drupalcode.org/canvas/ for documentation on how to build a code component
+
+    const Component = ({
+      text = "code",
+    }) => {
+      return (
+        <div className="text-3xl">
+          {text}
+        </div>
+      );
+    };
+
+    export default Component;
+  compiled: ''
+css:
+  original: ''
+  compiled: ''
+dataDependencies: {  }

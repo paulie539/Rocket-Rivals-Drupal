@@ -1,0 +1,20 @@
+uuid: cac4921d-28f8-4426-8b8d-d3aa9e255cb2
+langcode: en
+status: true
+dependencies:
+  theme:
+    - mercury
+_core:
+  default_config_hash: OQ9aJ-4qVwK1x00o9EOYK4eFDjQr_HLpbPiJaPSVZiQ
+id: mercury_local_actions
+theme: mercury
+region: content
+weight: -10
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

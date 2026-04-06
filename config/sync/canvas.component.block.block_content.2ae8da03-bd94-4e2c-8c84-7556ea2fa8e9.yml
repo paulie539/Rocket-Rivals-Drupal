@@ -1,0 +1,25 @@
+uuid: 7cb6d588-5e2b-4644-8a4a-e80583e3f072
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:2ae8da03-bd94-4e2c-8c84-7556ea2fa8e9'
+  module:
+    - block_content
+active_version: dedb8e8e1d7cda5d
+versioned_properties:
+  active:
+    settings:
+      default_settings:
+        id: 'block_content:2ae8da03-bd94-4e2c-8c84-7556ea2fa8e9'
+        label: 'Merch Carousel'
+        label_display: '0'
+        provider: block_content
+        view_mode: full
+    fallback_metadata:
+      slot_definitions: null
+label: 'Merch Carousel'
+id: block.block_content.2ae8da03-bd94-4e2c-8c84-7556ea2fa8e9
+provider: block_content
+source: block
+source_local_id: 'block_content:2ae8da03-bd94-4e2c-8c84-7556ea2fa8e9'

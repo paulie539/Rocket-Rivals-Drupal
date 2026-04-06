@@ -1,0 +1,24 @@
+uuid: 460f191a-42dd-4dca-a342-d1d4d7e48bf8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_banner
+    - media.type.image
+    - node.type.team
+id: node.team.field_banner
+field_name: field_banner
+entity_type: node
+bundle: team
+label: Banner
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+field_type: entity_reference

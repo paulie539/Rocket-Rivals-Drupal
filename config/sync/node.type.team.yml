@@ -1,0 +1,11 @@
+uuid: a619e639-ea3b-42c9-a8a4-a2a9f08e8e98
+langcode: en
+status: true
+dependencies: {  }
+name: Team
+type: team
+description: 'A Rocket Rivals league team.'
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: true

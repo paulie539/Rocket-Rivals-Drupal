@@ -1,0 +1,22 @@
+uuid: cdf81ba0-9007-4476-a554-1cd86411401c
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - rocket_rivals
+_core:
+  default_config_hash: WvPhI8OwllG0gE69-F8qL3ai3nd5SbYD6JpmEuZcyok
+id: rocket_rivals_messages
+theme: rocket_rivals
+region: highlighted
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  label_display: '0'
+  provider: system
+visibility: {  }

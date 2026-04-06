@@ -1,0 +1,19 @@
+uuid: e4c053a7-f47b-4e7b-97b6-60240db48d01
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_icon_text
+    - node.type.esports_card
+id: node.esports_card.field_icon_text
+field_name: field_icon_text
+entity_type: node
+bundle: esports_card
+label: 'Icon Text'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,19 @@
+uuid: ebcc8cdc-8676-475e-bf9c-6d5f0b25ecb0
+langcode: en
+status: false
+dependencies:
+  config:
+    - canvas.component.block.help_block
+  theme:
+    - gin
+id: gin.help
+region: help
+theme: gin
+component_tree:
+  -
+    uuid: f18df323-f881-4613-9c8b-ea55bff4f8cf
+    component_id: block.help_block
+    component_version: f0baefd21cddb437
+    inputs:
+      label: Help
+      label_display: '0'

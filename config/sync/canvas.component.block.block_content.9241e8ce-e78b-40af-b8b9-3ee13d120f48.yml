@@ -1,0 +1,25 @@
+uuid: 145c99db-4c0f-465e-a69e-a7b14ee9221d
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:9241e8ce-e78b-40af-b8b9-3ee13d120f48'
+  module:
+    - block_content
+active_version: e35e8162bc9fa233
+versioned_properties:
+  active:
+    settings:
+      default_settings:
+        id: 'block_content:9241e8ce-e78b-40af-b8b9-3ee13d120f48'
+        label: 'Divisions Header'
+        label_display: '0'
+        provider: block_content
+        view_mode: full
+    fallback_metadata:
+      slot_definitions: null
+label: 'Divisions Header'
+id: block.block_content.9241e8ce-e78b-40af-b8b9-3ee13d120f48
+provider: block_content
+source: block
+source_local_id: 'block_content:9241e8ce-e78b-40af-b8b9-3ee13d120f48'

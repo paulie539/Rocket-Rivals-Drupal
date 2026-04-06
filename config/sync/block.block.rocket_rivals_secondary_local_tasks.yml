@@ -1,0 +1,22 @@
+uuid: 5768b84c-6ab7-4814-b4ab-5b02437f0359
+langcode: en
+status: false
+dependencies:
+  theme:
+    - rocket_rivals
+_core:
+  default_config_hash: BCWhood0xXFQYqxFgL1spXdb9KeIuXH1YvTdjIEedDg
+id: rocket_rivals_secondary_local_tasks
+theme: rocket_rivals
+region: header
+weight: 0
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Secondary tabs'
+  label_display: '0'
+  provider: core
+  primary: false
+  secondary: true
+visibility: {  }

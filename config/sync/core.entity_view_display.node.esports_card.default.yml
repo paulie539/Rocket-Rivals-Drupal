@@ -1,0 +1,41 @@
+uuid: 9ee58a2e-bb21-4096-ba4e-c8329b82c850
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.esports_card.field_icon
+    - field.field.node.esports_card.field_icon_text
+    - node.type.esports_card
+  module:
+    - image
+    - user
+id: node.esports_card.default
+targetEntityType: node
+bundle: esports_card
+mode: default
+content:
+  field_icon:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_icon_text:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

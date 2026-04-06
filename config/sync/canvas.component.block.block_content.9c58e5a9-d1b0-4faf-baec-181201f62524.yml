@@ -1,0 +1,25 @@
+uuid: d76fad72-2c40-4559-8c62-1f05e0287130
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:9c58e5a9-d1b0-4faf-baec-181201f62524'
+  module:
+    - block_content
+active_version: 514bfcfd5bd6adca
+versioned_properties:
+  active:
+    settings:
+      default_settings:
+        id: 'block_content:9c58e5a9-d1b0-4faf-baec-181201f62524'
+        label: 'Rank Range (Titans)'
+        label_display: '0'
+        provider: block_content
+        view_mode: full
+    fallback_metadata:
+      slot_definitions: null
+label: 'Rank Range (Titans)'
+id: block.block_content.9c58e5a9-d1b0-4faf-baec-181201f62524
+provider: block_content
+source: block
+source_local_id: 'block_content:9c58e5a9-d1b0-4faf-baec-181201f62524'

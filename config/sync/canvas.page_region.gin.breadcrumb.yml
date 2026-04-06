@@ -1,0 +1,19 @@
+uuid: d81453a8-1238-4fb3-9baa-11b1d4ffe48f
+langcode: en
+status: false
+dependencies:
+  config:
+    - canvas.component.block.system_breadcrumb_block
+  theme:
+    - gin
+id: gin.breadcrumb
+region: breadcrumb
+theme: gin
+component_tree:
+  -
+    uuid: 00e49a45-4c8d-4ca6-a22c-881e65fb21ab
+    component_id: block.system_breadcrumb_block
+    component_version: ad6359c331fc7c45
+    inputs:
+      label: Breadcrumbs
+      label_display: '0'

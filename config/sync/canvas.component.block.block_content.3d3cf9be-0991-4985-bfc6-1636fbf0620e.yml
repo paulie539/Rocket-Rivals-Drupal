@@ -1,0 +1,25 @@
+uuid: 5c87639e-b365-416a-b08b-db096920af23
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:3d3cf9be-0991-4985-bfc6-1636fbf0620e'
+  module:
+    - block_content
+active_version: d99d4bd362e0ed2b
+versioned_properties:
+  active:
+    settings:
+      default_settings:
+        id: 'block_content:3d3cf9be-0991-4985-bfc6-1636fbf0620e'
+        label: 'Season Highlights Showcase'
+        label_display: '0'
+        provider: block_content
+        view_mode: full
+    fallback_metadata:
+      slot_definitions: null
+label: 'Season Highlights Showcase'
+id: block.block_content.3d3cf9be-0991-4985-bfc6-1636fbf0620e
+provider: block_content
+source: block
+source_local_id: 'block_content:3d3cf9be-0991-4985-bfc6-1636fbf0620e'

@@ -1,0 +1,11 @@
+uuid: 27001a90-172a-4e00-ac09-187a041124f1
+langcode: en
+status: true
+dependencies: {  }
+name: Player
+type: player
+description: 'A Rocket Rivals league player.'
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: true

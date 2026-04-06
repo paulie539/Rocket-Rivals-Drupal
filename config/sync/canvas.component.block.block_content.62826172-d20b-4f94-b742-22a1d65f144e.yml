@@ -1,0 +1,25 @@
+uuid: ae7ab17d-30e1-48d9-a313-54e67291a150
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:62826172-d20b-4f94-b742-22a1d65f144e'
+  module:
+    - block_content
+active_version: 676a855f5917fcab
+versioned_properties:
+  active:
+    settings:
+      default_settings:
+        id: 'block_content:62826172-d20b-4f94-b742-22a1d65f144e'
+        label: 'Division Spotlight'
+        label_display: '0'
+        provider: block_content
+        view_mode: full
+    fallback_metadata:
+      slot_definitions: null
+label: 'Division Spotlight'
+id: block.block_content.62826172-d20b-4f94-b742-22a1d65f144e
+provider: block_content
+source: block
+source_local_id: 'block_content:62826172-d20b-4f94-b742-22a1d65f144e'

@@ -1,0 +1,22 @@
+uuid: a7f4b90f-e1ae-4c57-9db0-475bddb7131d
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - rocket_rivals
+_core:
+  default_config_hash: hBHXB7hC05XU7pDYzETt-GUcpFlogK1gkjyAsg0Ym58
+id: rocket_rivals_content
+theme: rocket_rivals
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: Home
+  label_display: '0'
+  provider: system
+visibility: {  }

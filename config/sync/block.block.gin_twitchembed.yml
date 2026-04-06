@@ -1,0 +1,28 @@
+uuid: 07f551bd-bc51-441c-807c-77e5f10b34d5
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:7b81ea09-90a5-44d5-ba9b-76dbf40f7c5d'
+  module:
+    - block_content
+    - system
+  theme:
+    - gin
+id: gin_twitchembed
+theme: gin
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:7b81ea09-90a5-44d5-ba9b-76dbf40f7c5d'
+settings:
+  id: 'block_content:7b81ea09-90a5-44d5-ba9b-76dbf40f7c5d'
+  label: 'Twitch Embed'
+  label_display: '0'
+  provider: block_content
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /schedule

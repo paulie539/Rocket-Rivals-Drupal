@@ -1,0 +1,25 @@
+uuid: 9b2b4807-0a6a-4663-8027-1abad56b99a3
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:a29646c9-b7f8-4f2c-859e-48594e6dd416'
+  module:
+    - block_content
+active_version: 401ea0bbe4937c10
+versioned_properties:
+  active:
+    settings:
+      default_settings:
+        id: 'block_content:a29646c9-b7f8-4f2c-859e-48594e6dd416'
+        label: 'Spacer — Medium'
+        label_display: '0'
+        provider: block_content
+        view_mode: full
+    fallback_metadata:
+      slot_definitions: null
+label: 'Spacer — Medium'
+id: block.block_content.a29646c9-b7f8-4f2c-859e-48594e6dd416
+provider: block_content
+source: block
+source_local_id: 'block_content:a29646c9-b7f8-4f2c-859e-48594e6dd416'

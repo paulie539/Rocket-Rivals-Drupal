@@ -1,0 +1,22 @@
+uuid: 8e46def0-e85e-4813-b992-eb865def763f
+langcode: en
+status: true
+dependencies:
+  module:
+    - rr_background
+active_version: 7223cafc3407b1b2
+versioned_properties:
+  active:
+    settings:
+      default_settings:
+        id: rr_twitch_embed
+        label: 'Twitch Embed'
+        label_display: '0'
+        provider: rr_background
+    fallback_metadata:
+      slot_definitions: null
+label: 'Twitch Embed'
+id: block.rr_twitch_embed
+provider: rr_background
+source: block
+source_local_id: rr_twitch_embed

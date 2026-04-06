@@ -1,0 +1,20 @@
+uuid: 6c7a06d0-c872-4a61-9d32-0290e918e0e3
+langcode: en
+status: true
+dependencies:
+  module:
+    - rr_background
+  theme:
+    - rocket_rivals
+id: rr_footer_block
+theme: rocket_rivals
+region: footer
+weight: 0
+provider: null
+plugin: rr_footer
+settings:
+  id: rr_footer
+  label: 'Site Footer'
+  label_display: '0'
+  provider: rr_background
+visibility: {  }

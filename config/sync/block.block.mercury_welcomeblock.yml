@@ -1,0 +1,28 @@
+uuid: f7a5bff2-f79f-46fa-bc14-61db7904e78e
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:ca828935-cb70-4a62-b76a-f3c5aaf9e695'
+  module:
+    - block_content
+    - system
+  theme:
+    - mercury
+id: mercury_welcomeblock
+theme: mercury
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:ca828935-cb70-4a62-b76a-f3c5aaf9e695'
+settings:
+  id: 'block_content:ca828935-cb70-4a62-b76a-f3c5aaf9e695'
+  label: 'Welcome Block'
+  label_display: '0'
+  provider: block_content
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /home

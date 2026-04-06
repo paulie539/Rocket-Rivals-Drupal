@@ -1,0 +1,25 @@
+uuid: 07c5398a-ad2d-4ecf-afdc-18088901af7d
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:d7ffd0b2-7a9c-419f-b29e-61c4f1a6f52a'
+  module:
+    - block_content
+active_version: dde9971382beef16
+versioned_properties:
+  active:
+    settings:
+      default_settings:
+        id: 'block_content:d7ffd0b2-7a9c-419f-b29e-61c4f1a6f52a'
+        label: 'Challengers Icon'
+        label_display: '0'
+        provider: block_content
+        view_mode: full
+    fallback_metadata:
+      slot_definitions: null
+label: 'Challengers Icon'
+id: block.block_content.d7ffd0b2-7a9c-419f-b29e-61c4f1a6f52a
+provider: block_content
+source: block
+source_local_id: 'block_content:d7ffd0b2-7a9c-419f-b29e-61c4f1a6f52a'

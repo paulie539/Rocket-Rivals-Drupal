@@ -1,0 +1,28 @@
+uuid: c9ceac0c-9a0e-4f37-bb27-5799f0ee1b91
+langcode: en
+status: false
+dependencies:
+  config:
+    - block_content.type.basic
+  module:
+    - layout_builder
+active_version: f5295c3ab69c18b8
+versioned_properties:
+  active:
+    settings:
+      default_settings:
+        id: 'inline_block:basic'
+        label: 'Basic block'
+        label_display: '0'
+        provider: layout_builder
+        view_mode: full
+        block_id: null
+        block_revision_id: null
+        block_serialized: null
+    fallback_metadata:
+      slot_definitions: null
+label: 'Basic block'
+id: block.inline_block.basic
+provider: layout_builder
+source: block
+source_local_id: 'inline_block:basic'

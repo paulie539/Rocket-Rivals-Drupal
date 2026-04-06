@@ -26,6 +26,7 @@
         "drupal/core-recommended": "^11.3",
         "drupal/gin": "^5",
         "drupal/gin_toolbar": "^3",
+        "drupal/google_analytics": "^4.0",
         "drupal/mercury": "^1.0",
         "drupal/views_bootstrap": "^5.5@RC",
         "drush/drush": "^13.7"

@@ -1,0 +1,35 @@
+uuid: 6b7bc4d8-2066-4e49-be2b-780e8d4888eb
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:03412f2c-9fa4-43a1-a130-545cb3beabd6'
+  module:
+    - block_content
+active_version: ca2c4d68e31781b9
+versioned_properties:
+  active:
+    settings:
+      default_settings:
+        id: 'block_content:03412f2c-9fa4-43a1-a130-545cb3beabd6'
+        label: 'Stats (Drop down)'
+        label_display: '0'
+        provider: block_content
+        view_mode: full
+    fallback_metadata:
+      slot_definitions: null
+  13c4f68b0836fa3a:
+    settings:
+      default_settings:
+        id: 'block_content:03412f2c-9fa4-43a1-a130-545cb3beabd6'
+        label: 'Stats (Divisions)'
+        label_display: '0'
+        provider: block_content
+        view_mode: full
+    fallback_metadata:
+      slot_definitions: null
+label: 'Stats (Drop down)'
+id: block.block_content.03412f2c-9fa4-43a1-a130-545cb3beabd6
+provider: block_content
+source: block
+source_local_id: 'block_content:03412f2c-9fa4-43a1-a130-545cb3beabd6'

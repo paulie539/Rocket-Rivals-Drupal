@@ -1,0 +1,82 @@
+uuid: 120d4823-58a2-4fab-8498-0f9218c59f98
+langcode: en
+status: false
+dependencies:
+  config:
+    - canvas.component.block.block_content.03412f2c-9fa4-43a1-a130-545cb3beabd6
+    - canvas.component.block.block_content.7b81ea09-90a5-44d5-ba9b-76dbf40f7c5d
+    - canvas.component.block.block_content.b1ca7fb8-f0ed-4a3c-a430-80bc57e58d27
+    - canvas.component.block.block_content.bf59f617-34c4-4f4c-aeb9-691be5459b61
+    - canvas.component.block.block_content.ca828935-cb70-4a62-b76a-f3c5aaf9e695
+    - canvas.component.block.local_actions_block
+    - canvas.component.block.local_tasks_block
+    - canvas.component.block.page_title_block
+  theme:
+    - gin
+id: gin.header
+region: header
+theme: gin
+component_tree:
+  -
+    uuid: 3deeb043-5453-4e8e-81f2-7b3e73727894
+    component_id: block.block_content.b1ca7fb8-f0ed-4a3c-a430-80bc57e58d27
+    component_version: dffafbb36a10c0f0
+    inputs:
+      label: 'Hero Block (HTML)'
+      label_display: '0'
+      view_mode: full
+  -
+    uuid: 50fdb3f4-dfa4-4dc9-8637-ef7d6fea26ed
+    component_id: block.local_actions_block
+    component_version: 29753123eb31b8ab
+    inputs:
+      label: 'Primary admin actions'
+      label_display: '0'
+  -
+    uuid: b8275ab1-ffdf-4be0-91df-b30cad1f6d53
+    component_id: block.page_title_block
+    component_version: 90ce139b2d3e2601
+    inputs:
+      label: 'Page title'
+      label_display: '0'
+  -
+    uuid: 7ef37a15-31fa-4d73-bcf2-03808882d891
+    component_id: block.local_tasks_block
+    component_version: 429966cebad152ba
+    inputs:
+      label: 'Primary tabs'
+      label_display: '0'
+      primary: true
+      secondary: false
+  -
+    uuid: 6463ee13-75fa-4ac7-92b9-06d1661cd7e1
+    component_id: block.block_content.03412f2c-9fa4-43a1-a130-545cb3beabd6
+    component_version: 13c4f68b0836fa3a
+    inputs:
+      label: 'Stats (Divisions)'
+      label_display: '0'
+      view_mode: full
+  -
+    uuid: 07f551bd-bc51-441c-807c-77e5f10b34d5
+    component_id: block.block_content.7b81ea09-90a5-44d5-ba9b-76dbf40f7c5d
+    component_version: e63ae63ebed4cd93
+    inputs:
+      label: 'Twitch Embed'
+      label_display: '0'
+      view_mode: full
+  -
+    uuid: ca027f31-33ab-4be2-bb28-742c29490afb
+    component_id: block.block_content.bf59f617-34c4-4f4c-aeb9-691be5459b61
+    component_version: 1299754e0c21c92f
+    inputs:
+      label: 'Twitch Schedule'
+      label_display: visible
+      view_mode: full
+  -
+    uuid: 0315d6f7-a032-4bc5-8c11-bb2378ee5545
+    component_id: block.block_content.ca828935-cb70-4a62-b76a-f3c5aaf9e695
+    component_version: 017c5e85d4912851
+    inputs:
+      label: 'Welcome Block'
+      label_display: '0'
+      view_mode: full

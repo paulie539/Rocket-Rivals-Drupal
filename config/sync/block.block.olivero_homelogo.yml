@@ -1,0 +1,23 @@
+uuid: ce98306c-08c3-45c9-8f4d-8cc372a29afc
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:3ca727ac-c998-4c58-bfbd-b22118ad8c51'
+  module:
+    - block_content
+  theme:
+    - olivero
+id: olivero_homelogo
+theme: olivero
+region: hero
+weight: 0
+provider: null
+plugin: 'block_content:3ca727ac-c998-4c58-bfbd-b22118ad8c51'
+settings:
+  id: 'block_content:3ca727ac-c998-4c58-bfbd-b22118ad8c51'
+  label: 'Home (Logo)'
+  label_display: '0'
+  provider: block_content
+  view_mode: full
+visibility: {  }

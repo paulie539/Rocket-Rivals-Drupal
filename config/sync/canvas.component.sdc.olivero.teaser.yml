@@ -1,0 +1,33 @@
+uuid: 2a89cfc6-a8d0-45ca-a9f3-c26c3b6e9b25
+langcode: en
+status: true
+dependencies:
+  theme:
+    - olivero
+active_version: 1ffd95fb3b766ab6
+versioned_properties:
+  active:
+    settings:
+      prop_field_definitions: {  }
+    fallback_metadata:
+      slot_definitions:
+        content:
+          title: Content
+          description: 'The teaser content'
+        image:
+          title: Image
+          description: 'Teaser image'
+        meta:
+          title: Meta
+          description: 'Teaser meta'
+        prefix:
+          title: Prefix
+          description: 'Contextual links slot'
+        title:
+          title: 'Title content'
+          description: 'Teaser title'
+label: Teaser
+id: sdc.olivero.teaser
+provider: olivero
+source: sdc
+source_local_id: 'olivero:teaser'

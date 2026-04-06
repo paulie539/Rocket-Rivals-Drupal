@@ -1,0 +1,25 @@
+uuid: 7b70caf0-513d-4f4a-8c00-3794e0a35cd9
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:83a59ef7-05e0-46ba-91bb-596b6f71b115'
+  module:
+    - block_content
+active_version: a6ce80ecedb25dcc
+versioned_properties:
+  active:
+    settings:
+      default_settings:
+        id: 'block_content:83a59ef7-05e0-46ba-91bb-596b6f71b115'
+        label: 'Community Discord CTA'
+        label_display: '0'
+        provider: block_content
+        view_mode: full
+    fallback_metadata:
+      slot_definitions: null
+label: 'Community Discord CTA'
+id: block.block_content.83a59ef7-05e0-46ba-91bb-596b6f71b115
+provider: block_content
+source: block
+source_local_id: 'block_content:83a59ef7-05e0-46ba-91bb-596b6f71b115'

@@ -1,0 +1,25 @@
+uuid: c2b243d1-ce06-468b-8c94-81ed14761e27
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:48cfa0e3-8fec-4cb4-9d64-7c944e43e9fd'
+  module:
+    - block_content
+active_version: 9a69f84b1ea8ec20
+versioned_properties:
+  active:
+    settings:
+      default_settings:
+        id: 'block_content:48cfa0e3-8fec-4cb4-9d64-7c944e43e9fd'
+        label: 'Site Branding'
+        label_display: '0'
+        provider: block_content
+        view_mode: full
+    fallback_metadata:
+      slot_definitions: null
+label: 'Site Branding'
+id: block.block_content.48cfa0e3-8fec-4cb4-9d64-7c944e43e9fd
+provider: block_content
+source: block
+source_local_id: 'block_content:48cfa0e3-8fec-4cb4-9d64-7c944e43e9fd'

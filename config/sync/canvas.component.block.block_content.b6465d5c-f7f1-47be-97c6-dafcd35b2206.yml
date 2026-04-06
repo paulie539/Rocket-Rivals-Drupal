@@ -1,0 +1,25 @@
+uuid: 384bb4b5-d4e1-488f-b657-d0b8faaed751
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:b6465d5c-f7f1-47be-97c6-dafcd35b2206'
+  module:
+    - block_content
+active_version: ef68cca4fff70bf1
+versioned_properties:
+  active:
+    settings:
+      default_settings:
+        id: 'block_content:b6465d5c-f7f1-47be-97c6-dafcd35b2206'
+        label: 'League Format'
+        label_display: '0'
+        provider: block_content
+        view_mode: full
+    fallback_metadata:
+      slot_definitions: null
+label: 'League Format'
+id: block.block_content.b6465d5c-f7f1-47be-97c6-dafcd35b2206
+provider: block_content
+source: block
+source_local_id: 'block_content:b6465d5c-f7f1-47be-97c6-dafcd35b2206'

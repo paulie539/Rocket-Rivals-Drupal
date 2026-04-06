@@ -1,0 +1,22 @@
+uuid: 57c1e2a0-bb0a-4f58-9be0-866146b5ffce
+langcode: en
+status: true
+dependencies:
+  module:
+    - rr_background
+active_version: 4c287df8dea1aba3
+versioned_properties:
+  active:
+    settings:
+      default_settings:
+        id: rr_live_status
+        label: 'Twitch Live Status'
+        label_display: '0'
+        provider: rr_background
+    fallback_metadata:
+      slot_definitions: null
+label: 'Twitch Live Status'
+id: block.rr_live_status
+provider: rr_background
+source: block
+source_local_id: rr_live_status

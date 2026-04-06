@@ -1,0 +1,20 @@
+uuid: 5bc7e479-658d-4382-a111-beabb2753e19
+langcode: en
+status: false
+dependencies:
+  theme:
+    - rocket_rivals
+_core:
+  default_config_hash: OQ9aJ-4qVwK1x00o9EOYK4eFDjQr_HLpbPiJaPSVZiQ
+id: rocket_rivals_local_actions
+theme: rocket_rivals
+region: content
+weight: -10
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

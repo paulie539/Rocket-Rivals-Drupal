@@ -1,0 +1,25 @@
+uuid: edc704db-b51e-42d9-acea-421d9b2eda13
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:ea05c967-0d76-47a5-8840-eb46e677d503'
+  module:
+    - block_content
+active_version: 5b3cd85226c8d9c9
+versioned_properties:
+  active:
+    settings:
+      default_settings:
+        id: 'block_content:ea05c967-0d76-47a5-8840-eb46e677d503'
+        label: 'Stats: Challengers'
+        label_display: '0'
+        provider: block_content
+        view_mode: full
+    fallback_metadata:
+      slot_definitions: null
+label: 'Stats: Challengers'
+id: block.block_content.ea05c967-0d76-47a5-8840-eb46e677d503
+provider: block_content
+source: block
+source_local_id: 'block_content:ea05c967-0d76-47a5-8840-eb46e677d503'

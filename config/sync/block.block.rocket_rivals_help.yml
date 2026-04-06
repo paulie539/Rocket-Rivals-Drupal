@@ -1,0 +1,22 @@
+uuid: 843648d6-bb41-4bce-a0d1-143793d9ad73
+langcode: en
+status: false
+dependencies:
+  module:
+    - help
+  theme:
+    - rocket_rivals
+_core:
+  default_config_hash: 8nOAry2oKqJOr0zbrlJ3sZHDFJLIO6j-0vT0K_TYca4
+id: rocket_rivals_help
+theme: rocket_rivals
+region: header
+weight: 0
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

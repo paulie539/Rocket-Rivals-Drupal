@@ -1,0 +1,23 @@
+uuid: 964c6fb7-9d80-4ddd-a353-c92960e2ad66
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:48cfa0e3-8fec-4cb4-9d64-7c944e43e9fd'
+  module:
+    - block_content
+  theme:
+    - olivero
+id: olivero_sitebranding
+theme: olivero
+region: hero
+weight: 0
+provider: null
+plugin: 'block_content:48cfa0e3-8fec-4cb4-9d64-7c944e43e9fd'
+settings:
+  id: 'block_content:48cfa0e3-8fec-4cb4-9d64-7c944e43e9fd'
+  label: 'Site Branding'
+  label_display: '0'
+  provider: block_content
+  view_mode: full
+visibility: {  }

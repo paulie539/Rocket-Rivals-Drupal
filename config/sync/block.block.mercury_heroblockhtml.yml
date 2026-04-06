@@ -1,0 +1,28 @@
+uuid: 41bbd1c6-9d8f-45cc-bee5-c93163d9800e
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:b1ca7fb8-f0ed-4a3c-a430-80bc57e58d27'
+  module:
+    - block_content
+    - system
+  theme:
+    - mercury
+id: mercury_heroblockhtml
+theme: mercury
+region: header
+weight: 0
+provider: null
+plugin: 'block_content:b1ca7fb8-f0ed-4a3c-a430-80bc57e58d27'
+settings:
+  id: 'block_content:b1ca7fb8-f0ed-4a3c-a430-80bc57e58d27'
+  label: 'Hero Block (HTML)'
+  label_display: '0'
+  provider: block_content
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/home\r\n/about\r\n/divisions\r\n/stats\r\n/schedule"

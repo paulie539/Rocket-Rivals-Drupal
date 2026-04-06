@@ -1,0 +1,28 @@
+uuid: 8918e41e-ec2c-40e4-9baa-5d23f845a3a0
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:03412f2c-9fa4-43a1-a130-545cb3beabd6'
+  module:
+    - block_content
+    - system
+  theme:
+    - rocket_rivals
+id: rocket_rivals_statsdivisions
+theme: rocket_rivals
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:03412f2c-9fa4-43a1-a130-545cb3beabd6'
+settings:
+  id: 'block_content:03412f2c-9fa4-43a1-a130-545cb3beabd6'
+  label: 'Stats (Divisions)'
+  label_display: '0'
+  provider: block_content
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /stats

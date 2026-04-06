@@ -1,0 +1,25 @@
+uuid: 56ce755f-e331-436b-bc65-fc99a56b46e0
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:dff2ac0d-780a-42bb-8534-50ba8bd13a86'
+  module:
+    - block_content
+active_version: 7aa6198f1e2dfa9c
+versioned_properties:
+  active:
+    settings:
+      default_settings:
+        id: 'block_content:dff2ac0d-780a-42bb-8534-50ba8bd13a86'
+        label: 'Spacer — Small'
+        label_display: '0'
+        provider: block_content
+        view_mode: full
+    fallback_metadata:
+      slot_definitions: null
+label: 'Spacer — Small'
+id: block.block_content.dff2ac0d-780a-42bb-8534-50ba8bd13a86
+provider: block_content
+source: block
+source_local_id: 'block_content:dff2ac0d-780a-42bb-8534-50ba8bd13a86'

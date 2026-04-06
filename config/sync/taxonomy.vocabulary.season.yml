@@ -1,0 +1,9 @@
+uuid: a3776912-263c-4b4a-bf40-2a410dff15f7
+langcode: en
+status: true
+dependencies: {  }
+name: Season
+vid: season
+description: 'Rocket Rivals competitive seasons.'
+weight: 0
+new_revision: false

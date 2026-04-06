@@ -1,0 +1,25 @@
+uuid: 372e6066-88cf-4a22-aca3-6ff1c0cebfe3
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:cbc477a7-e4aa-469f-aa51-24480cbfa8f7'
+  module:
+    - block_content
+active_version: 5598209e9c82f6ab
+versioned_properties:
+  active:
+    settings:
+      default_settings:
+        id: 'block_content:cbc477a7-e4aa-469f-aa51-24480cbfa8f7'
+        label: 'Rank Range (Legends)'
+        label_display: '0'
+        provider: block_content
+        view_mode: full
+    fallback_metadata:
+      slot_definitions: null
+label: 'Rank Range (Legends)'
+id: block.block_content.cbc477a7-e4aa-469f-aa51-24480cbfa8f7
+provider: block_content
+source: block
+source_local_id: 'block_content:cbc477a7-e4aa-469f-aa51-24480cbfa8f7'

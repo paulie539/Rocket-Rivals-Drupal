@@ -1,0 +1,25 @@
+uuid: cfa0eed0-5995-41fd-b9ec-daa2c8c739d5
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:01e627d0-49c1-4c89-b367-236d04dc9197'
+  module:
+    - block_content
+active_version: 2a29ca9a7bc2bd4a
+versioned_properties:
+  active:
+    settings:
+      default_settings:
+        id: 'block_content:01e627d0-49c1-4c89-b367-236d04dc9197'
+        label: 'Rank Range (Challengers)'
+        label_display: '0'
+        provider: block_content
+        view_mode: full
+    fallback_metadata:
+      slot_definitions: null
+label: 'Rank Range (Challengers)'
+id: block.block_content.01e627d0-49c1-4c89-b367-236d04dc9197
+provider: block_content
+source: block
+source_local_id: 'block_content:01e627d0-49c1-4c89-b367-236d04dc9197'

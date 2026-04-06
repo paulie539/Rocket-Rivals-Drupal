@@ -1,0 +1,26 @@
+uuid: 4f9de12b-9003-41c6-98a1-0e0ef3790ae9
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.front_page_view
+  module:
+    - views
+active_version: 53f9655e0693ec9a
+versioned_properties:
+  active:
+    settings:
+      default_settings:
+        id: 'views_block:front_page_view-block_1'
+        label: 'Front Page View'
+        label_display: '0'
+        provider: views
+        views_label: ''
+        items_per_page: null
+    fallback_metadata:
+      slot_definitions: null
+label: 'Front Page View'
+id: block.views_block.front_page_view-block_1
+provider: views
+source: block
+source_local_id: 'views_block:front_page_view-block_1'

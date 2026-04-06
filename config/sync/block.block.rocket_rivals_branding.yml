@@ -1,0 +1,23 @@
+uuid: 59a7bd4a-a0eb-4a55-a0f3-4dc5397e315a
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - rocket_rivals
+id: rocket_rivals_branding
+theme: rocket_rivals
+region: header
+weight: -30
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: false
+visibility: {  }

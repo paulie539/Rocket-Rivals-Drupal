@@ -1,0 +1,10 @@
+uuid: 1586ee9d-cce5-4549-841b-bc87e3309846
+langcode: en
+status: false
+dependencies:
+  theme:
+    - gin
+id: gin.sidebar_first
+region: sidebar_first
+theme: gin
+component_tree: {  }
