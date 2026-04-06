@@ -34,7 +34,7 @@
     btn.classList.toggle('is-off', !enabled);
     btn.setAttribute('aria-pressed', enabled ? 'true' : 'false');
     btn.querySelector('.rr-bg-toggle__label').textContent =
-      enabled ? 'Background Effect [ ON ]' : 'Background Effect [ OFF ]';
+      enabled ? 'Background Effect' : 'Background Effect';
   }
 
 })(Drupal);
