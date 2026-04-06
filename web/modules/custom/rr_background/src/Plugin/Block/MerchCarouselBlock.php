@@ -27,14 +27,14 @@ class MerchCarouselBlock extends BlockBase {
       'headline'    => 'Official Rocket Rivals merchandise is here! Thank you for the support!',
       'subheadline' => "We've teamed up with Arma to bring you exclusive branded gear.",
       'slides'      => implode("\n", [
-        'https://arma.gg/rrmerch1|/sites/default/files/rrmerch1.png|Rocket Rivals x Arma Merch 1',
-        'https://arma.gg/rrmerch2|/sites/default/files/rrmerch2.png|Rocket Rivals x Arma Merch 2',
-        'https://arma.gg/rrmerch3|/sites/default/files/rrmerch3.png|Rocket Rivals x Arma Merch 3',
-        'https://arma.gg/rrmerch4|/sites/default/files/rrmerch4.png|Rocket Rivals x Arma Merch 4',
-        'https://arma.gg/rrmerch5|/sites/default/files/rrmerch5.png|Rocket Rivals x Arma Merch 5',
-        'https://arma.gg/rrmerch6|/sites/default/files/rrmerch6.png|Rocket Rivals x Arma Merch 6',
-        'https://arma.gg/rrmerch7|/sites/default/files/rrmerch7.png|Rocket Rivals x Arma Merch 7',
-        'https://arma.gg/rrmerch8|/sites/default/files/rrmerch8.png|Rocket Rivals x Arma Merch 8',
+        'https://arma.gg/collections/rocket-rivals/rrmerch1|/sites/default/files/rrmerch1.png|Rocket Rivals x Arma Merch 1',
+        'https://arma.gg/collections/rocket-rivals/rrmerch2|/sites/default/files/rrmerch2.png|Rocket Rivals x Arma Merch 2',
+        'https://arma.gg/collections/rocket-rivals/rrmerch3|/sites/default/files/rrmerch3.png|Rocket Rivals x Arma Merch 3',
+        'https://arma.gg/collections/rocket-rivals/rrmerch4|/sites/default/files/rrmerch4.png|Rocket Rivals x Arma Merch 4',
+        'https://arma.gg/collections/rocket-rivals/rrmerch5|/sites/default/files/rrmerch5.png|Rocket Rivals x Arma Merch 5',
+        'https://arma.gg/collections/rocket-rivals/rrmerch6|/sites/default/files/rrmerch6.png|Rocket Rivals x Arma Merch 6',
+        'https://arma.gg/collections/rocket-rivals/rrmerch7|/sites/default/files/rrmerch7.png|Rocket Rivals x Arma Merch 7',
+        'https://arma.gg/collections/rocket-rivals/rrmerch8|/sites/default/files/rrmerch8.png|Rocket Rivals x Arma Merch 8',
       ]),
     ];
   }
