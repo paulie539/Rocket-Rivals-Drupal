@@ -2,5 +2,3 @@ api_version: 1
 web_docroot: true
 build_step: true
 php_version: 8.3
-database:
-  version: 10.11
