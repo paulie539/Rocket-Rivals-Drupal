@@ -1,6 +1,0 @@
-{
-  "plugins": ["@zackad/prettier-plugin-twig", "prettier-plugin-tailwindcss"],
-  "printWidth": 150,
-  "tailwindStylesheet": "./src/main.css",
-  "tailwindFunctions": ["html_cva"]
-}

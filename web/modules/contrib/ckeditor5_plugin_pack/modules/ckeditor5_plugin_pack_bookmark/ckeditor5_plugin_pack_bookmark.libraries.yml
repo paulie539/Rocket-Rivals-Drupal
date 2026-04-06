@@ -1,5 +1,0 @@
-admin.bookmark:
-  version: 20250121
-  css:
-    theme:
-      css/bookmark.admin.css: { }

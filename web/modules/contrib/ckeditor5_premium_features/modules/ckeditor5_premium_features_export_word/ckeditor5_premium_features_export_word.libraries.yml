@@ -1,4 +1,0 @@
-admin.export_word:
-  css:
-    theme:
-      css/export-word.admin.css: { }

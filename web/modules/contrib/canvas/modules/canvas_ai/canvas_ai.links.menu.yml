@@ -1,5 +1,0 @@
-canvas_ai.setting:
-  title: 'Canvas AI'
-  description: 'Canvas AI configuration and settings'
-  parent: ai.admin_settings
-  route_name: canvas_ai.setting

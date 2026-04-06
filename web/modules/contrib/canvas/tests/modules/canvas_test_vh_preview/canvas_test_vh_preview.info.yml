@@ -1,9 +1,0 @@
-name: 'Canvas Test VH In preview'
-type: module
-description: 'Provides components that set height with VH units.'
-package: Testing
-
-# Information added by Drupal.org packaging script on 2026-02-26
-version: '1.2.0'
-project: 'canvas'
-datestamp: 1772144516

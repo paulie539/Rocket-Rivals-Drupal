@@ -1,5 +1,0 @@
-admin.font:
-  version: 20240213
-  css:
-    theme:
-      css/font.admin.css: { }

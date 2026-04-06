@@ -1,5 +1,0 @@
-entity.canvas_page.add_page:
-  route_name: entity.canvas_page.add_page
-  title: 'Add Page'
-  appears_on:
-    - entity.canvas_page.collection

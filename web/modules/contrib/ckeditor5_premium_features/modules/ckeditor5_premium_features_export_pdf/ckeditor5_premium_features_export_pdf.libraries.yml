@@ -1,4 +1,0 @@
-admin.export_pdf:
-  css:
-    theme:
-      css/export-pdf.admin.css: { }

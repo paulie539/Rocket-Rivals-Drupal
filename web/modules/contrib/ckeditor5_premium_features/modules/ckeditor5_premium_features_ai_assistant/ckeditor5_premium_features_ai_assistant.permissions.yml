@@ -1,4 +1,0 @@
-administer ckeditor5_ai_command_group:
-  title: 'Administer CKEditor 5 AI Commands Group'
-access ai assistant provider:
-  title: 'Access to the CKEditor 5 AI Completion API'

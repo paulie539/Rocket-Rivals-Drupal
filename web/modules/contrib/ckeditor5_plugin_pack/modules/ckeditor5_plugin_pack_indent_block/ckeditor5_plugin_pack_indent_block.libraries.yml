@@ -1,5 +1,0 @@
-indent_block:
-  version: 29072024
-  css:
-    theme:
-      css/indent-block.css: { }

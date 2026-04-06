@@ -1,5 +1,0 @@
-admin.line_height:
-  version: 20250801
-  css:
-    theme:
-      css/line_height.admin.css: { }
