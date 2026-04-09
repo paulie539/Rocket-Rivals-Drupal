@@ -1,5 +1,5 @@
-# Drupal uploaded files
-/sites/default/files/
+# Drupal uploaded files (tracked intentionally — no sensitive data)
+# /sites/default/files/
 
 # Composer dependencies
 /vendor/
@@ -25,7 +25,11 @@ node_modules/
 /web/core/
 /web/modules/contrib/
 /web/themes/contrib/
-/web/sites/*/files/
+# /web/sites/*/files/
+/web/sites/*/files/css/
+/web/sites/*/files/js/
+/web/sites/*/files/styles/
+/web/sites/*/files/sync/
 /web/sites/*/private/
 /web/sites/*/files-private/
 
