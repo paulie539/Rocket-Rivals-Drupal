@@ -8,7 +8,7 @@ Welcome to the official repository for the **Rocket Rivals** web platform. Rocke
 
 We have competitive divisions of 3 tiers:
 
-- **Challengers**     [ ``Champion 1  --- Champion 3 ]
+- **Challengers**     [ Champion 1  --- Champion 3 ]
 
 
 - **Legends**   [ Grand Champion 1  --- Grand Champion 2 ]
