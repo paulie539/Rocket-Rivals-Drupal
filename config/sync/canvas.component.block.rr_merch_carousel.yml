@@ -4,7 +4,7 @@ status: true
 dependencies:
   module:
     - rr_background
-active_version: 0ab96c764d0c449c
+active_version: 3e6bcfa1c5f41d4e
 versioned_properties:
   active:
     settings:
@@ -16,14 +16,74 @@ versioned_properties:
         headline: 'Official Rocket Rivals merchandise is here! Thank you for the support!'
         subheadline: "We've teamed up with Arma to bring you exclusive branded gear."
         slides: |-
-          https://arma.gg/rrmerch1|/sites/default/files/rrmerch1.png|Rocket Rivals x Arma Merch 1
-          https://arma.gg/rrmerch2|/sites/default/files/rrmerch2.png|Rocket Rivals x Arma Merch 2
-          https://arma.gg/rrmerch3|/sites/default/files/rrmerch3.png|Rocket Rivals x Arma Merch 3
-          https://arma.gg/rrmerch4|/sites/default/files/rrmerch4.png|Rocket Rivals x Arma Merch 4
-          https://arma.gg/rrmerch5|/sites/default/files/rrmerch5.png|Rocket Rivals x Arma Merch 5
-          https://arma.gg/rrmerch6|/sites/default/files/rrmerch6.png|Rocket Rivals x Arma Merch 6
-          https://arma.gg/rrmerch7|/sites/default/files/rrmerch7.png|Rocket Rivals x Arma Merch 7
-          https://arma.gg/rrmerch8|/sites/default/files/rrmerch8.png|Rocket Rivals x Arma Merch 8
+          https://arma.gg/collections/rocket-rivals/rrmerch1|/sites/default/files/rrmerch1.png|Rocket Rivals x Arma Merch 1
+          https://arma.gg/collections/rocket-rivals/rrmerch2|/sites/default/files/rrmerch2.png|Rocket Rivals x Arma Merch 2
+          https://arma.gg/collections/rocket-rivals/rrmerch3|/sites/default/files/rrmerch3.png|Rocket Rivals x Arma Merch 3
+          https://arma.gg/collections/rocket-rivals/rrmerch4|/sites/default/files/rrmerch4.png|Rocket Rivals x Arma Merch 4
+          https://arma.gg/collections/rocket-rivals/rrmerch5|/sites/default/files/rrmerch5.png|Rocket Rivals x Arma Merch 5
+          https://arma.gg/collections/rocket-rivals/rrmerch6|/sites/default/files/rrmerch6.png|Rocket Rivals x Arma Merch 6
+          https://arma.gg/collections/rocket-rivals/rrmerch7|/sites/default/files/rrmerch7.png|Rocket Rivals x Arma Merch 7
+          https://arma.gg/collections/rocket-rivals/rrmerch8|/sites/default/files/rrmerch8.png|Rocket Rivals x Arma Merch 8
+    fallback_metadata:
+      slot_definitions: null
+  791b31b18a8a4593:
+    settings:
+      default_settings:
+        id: rr_merch_carousel
+        label: 'Rocket Rivals Merch Carousel'
+        label_display: '0'
+        provider: rr_background
+        headline: 'Official Rocket Rivals merchandise is here! Thank you for the support!'
+        subheadline: "We've teamed up with Arma to bring you exclusive branded gear."
+        slides: |-
+          https://arma.gg/collections/rocket-rivals/rrmerch1|/sites/default/files/rrmerch1.png|Rocket Rivals x Arma Merch 1
+          https://arma.gg/collections/rocket-rivals/2|/sites/default/files/rrmerch2.png|Rocket Rivals x Arma Merch 2
+          https://arma.gg/collections/rocket-rivals/3|/sites/default/files/rrmerch3.png|Rocket Rivals x Arma Merch 3
+          https://arma.gg/collections/rocket-rivals/4|/sites/default/files/rrmerch4.png|Rocket Rivals x Arma Merch 4
+          https://arma.gg/collections/rocket-rivals/5|/sites/default/files/rrmerch5.png|Rocket Rivals x Arma Merch 5
+          https://arma.gg/collections/rocket-rivals/6|/sites/default/files/rrmerch6.png|Rocket Rivals x Arma Merch 6
+          https://arma.gg/collections/rocket-rivals/7|/sites/default/files/rrmerch7.png|Rocket Rivals x Arma Merch 7
+          https://arma.gg/collections/rocket-rivals/8|/sites/default/files/rrmerch8.png|Rocket Rivals x Arma Merch 8
+    fallback_metadata:
+      slot_definitions: null
+  1f3e4fb9971111f3:
+    settings:
+      default_settings:
+        id: rr_merch_carousel
+        label: 'Rocket Rivals Merch Carousel'
+        label_display: '0'
+        provider: rr_background
+        headline: 'Official Rocket Rivals merchandise is here! Thank you for the support!'
+        subheadline: "We've teamed up with Arma to bring you exclusive branded gear."
+        slides: |-
+          https://arma.gg/collections/rocket-rivals/1|/sites/default/files/rrmerch1.png|Rocket Rivals x Arma Merch 1
+          https://arma.gg/collections/rocket-rivals/2|/sites/default/files/rrmerch2.png|Rocket Rivals x Arma Merch 2
+          https://arma.gg/collections/rocket-rivals/3|/sites/default/files/rrmerch3.png|Rocket Rivals x Arma Merch 3
+          https://arma.gg/collections/rocket-rivals/4|/sites/default/files/rrmerch4.png|Rocket Rivals x Arma Merch 4
+          https://arma.gg/collections/rocket-rivals/5|/sites/default/files/rrmerch5.png|Rocket Rivals x Arma Merch 5
+          https://arma.gg/collections/rocket-rivals/6|/sites/default/files/rrmerch6.png|Rocket Rivals x Arma Merch 6
+          https://arma.gg/collections/rocket-rivals/7|/sites/default/files/rrmerch7.png|Rocket Rivals x Arma Merch 7
+          https://arma.gg/collections/rocket-rivals/8|/sites/default/files/rrmerch8.png|Rocket Rivals x Arma Merch 8
+    fallback_metadata:
+      slot_definitions: null
+  0ab96c764d0c449c:
+    settings:
+      default_settings:
+        id: rr_merch_carousel
+        label: 'Rocket Rivals Merch Carousel'
+        label_display: '0'
+        provider: rr_background
+        headline: 'Official Rocket Rivals merchandise is here! Thank you for the support!'
+        subheadline: "We've teamed up with Arma to bring you exclusive branded gear."
+        slides: |-
+          https://arma.gg/collections/rocket-rivals/1|/sites/default/files/rrmerch1.png|Rocket Rivals x Arma Merch 1
+          https://arma.gg/collections/rocket-rivals/2|/sites/default/files/rrmerch2.png|Rocket Rivals x Arma Merch 2
+          https://arma.gg/collections/rocket-rivals/3|/sites/default/files/rrmerch3.png|Rocket Rivals x Arma Merch 3
+          https://arma.gg/collections/rocket-rivals/4|/sites/default/files/rrmerch4.png|Rocket Rivals x Arma Merch 4
+          https://arma.gg/collections/rocket-rivals/5|/sites/default/files/rrmerch5.png|Rocket Rivals x Arma Merch 5
+          https://arma.gg/collections/rocket-rivals/6|/sites/default/files/rrmerch6.png|Rocket Rivals x Arma Merch 6
+          https://arma.gg/collections/rocket-rivals/7|/sites/default/files/rrmerch7.png|Rocket Rivals x Arma Merch 7
+          https://arma.gg/collections/rocket-rivals/8|/sites/default/files/rrmerch8.png|Rocket Rivals x Arma Merch 8
     fallback_metadata:
       slot_definitions: null
 label: 'Rocket Rivals Merch Carousel'

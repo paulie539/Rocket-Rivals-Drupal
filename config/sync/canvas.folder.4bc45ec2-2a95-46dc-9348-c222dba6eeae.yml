@@ -7,5 +7,8 @@ configEntityTypeId: component
 weight: 0
 items:
   - block.views_block.comments_recent-block_1
+  - block.views_block.division_standings-block_challengers
+  - block.views_block.division_standings-block_legends
+  - block.views_block.division_standings-block_titans
   - block.views_block.front_page_view-block_1
   - block.views_block.who_s_online-who_s_online_block

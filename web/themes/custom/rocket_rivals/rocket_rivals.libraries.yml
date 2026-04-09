@@ -17,6 +17,7 @@ divisions:
     theme:
       css/divisions.css: {}
       css/cards.css: {}
+      css/stats.css: {}
 
 schedule:
   version: 1.0

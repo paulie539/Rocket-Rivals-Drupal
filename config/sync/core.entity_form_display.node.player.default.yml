@@ -4,6 +4,8 @@ status: true
 dependencies:
   config:
     - field.field.node.player.body
+    - field.field.node.player.field_discord
+    - field.field.node.player.field_platform
     - node.type.player
   module:
     - path
@@ -15,17 +17,25 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 121
+    weight: 10
     region: content
     settings:
-      rows: 9
-      summary_rows: 3
-      placeholder: ''
+      rows: 5
+      summary_rows: 2
+      placeholder: 'Optional: short bio, achievements, or fun facts about this player.'
       show_summary: false
     third_party_settings: {  }
-  created:
-    type: datetime_timestamp
-    weight: 10
+  field_discord:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 40
+      placeholder: 'e.g. username or username#1234'
+    third_party_settings: {  }
+  field_platform:
+    type: options_select
+    weight: 1
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -48,18 +58,10 @@ content:
     region: content
     settings:
       size: 60
-      placeholder: ''
-    third_party_settings: {  }
-  uid:
-    type: entity_reference_autocomplete
-    weight: 5
-    region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+      placeholder: 'In-game gamertag (exactly as it appears in Rocket League)'
     third_party_settings: {  }
 hidden:
+  created: true
   promote: true
   sticky: true
+  uid: true

@@ -5,7 +5,7 @@ dependencies: {  }
 name: Team
 type: team
 description: 'A Rocket Rivals league team.'
-help: null
+help: 'Use the <strong>Title</strong> as the team&apos;s official name. Select the Division this team competes in, upload their banner image, and link the Player nodes for each roster member.'
 new_revision: true
 preview_mode: 1
 display_submitted: true

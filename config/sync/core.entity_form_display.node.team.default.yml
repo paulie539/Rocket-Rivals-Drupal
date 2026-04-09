@@ -9,6 +9,7 @@ dependencies:
     - field.field.node.team.field_players
     - node.type.team
   module:
+    - media_library
     - path
     - text
 id: node.team.default
@@ -18,19 +19,36 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 121
-    region: content
-    settings:
-      rows: 9
-      summary_rows: 3
-      placeholder: ''
-      show_summary: false
-    third_party_settings: {  }
-  created:
-    type: datetime_timestamp
     weight: 10
     region: content
+    settings:
+      rows: 5
+      summary_rows: 2
+      placeholder: 'Optional: team description, history, or catchphrase.'
+      show_summary: false
+    third_party_settings: {  }
+  field_banner:
+    type: media_library_widget
+    weight: 2
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_division:
+    type: options_select
+    weight: 1
+    region: content
     settings: {  }
+    third_party_settings: {  }
+  field_players:
+    type: entity_reference_autocomplete
+    weight: 3
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: 'Search for a player node by gamertag'
     third_party_settings: {  }
   path:
     type: path
@@ -51,21 +69,10 @@ content:
     region: content
     settings:
       size: 60
-      placeholder: ''
-    third_party_settings: {  }
-  uid:
-    type: entity_reference_autocomplete
-    weight: 5
-    region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+      placeholder: 'Official team name (e.g. "Storm Kings")'
     third_party_settings: {  }
 hidden:
-  field_banner: true
-  field_division: true
-  field_players: true
+  created: true
   promote: true
   sticky: true
+  uid: true
