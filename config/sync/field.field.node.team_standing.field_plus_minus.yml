@@ -1,0 +1,23 @@
+uuid: 914c5f34-3373-42aa-b792-309ef17f09d1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_plus_minus
+    - node.type.team_standing
+id: node.team_standing.field_plus_minus
+field_name: field_plus_minus
+entity_type: node
+bundle: team_standing
+label: +/-
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

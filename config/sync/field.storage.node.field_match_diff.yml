@@ -1,0 +1,20 @@
+uuid: 0ae7761f-cc72-4de2-9e61-5421d7d3bb21
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_match_diff
+field_name: field_match_diff
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

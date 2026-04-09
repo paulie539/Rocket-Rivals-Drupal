@@ -1,0 +1,26 @@
+uuid: 6e32b890-891b-4e62-83b4-3bc4cbfc9e55
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.division_standings
+  module:
+    - views
+active_version: de0249d0361d7a2a
+versioned_properties:
+  active:
+    settings:
+      default_settings:
+        id: 'views_block:division_standings-block_legends'
+        label: 'Division Standings: Block: Legends'
+        label_display: '0'
+        provider: views
+        views_label: ''
+        items_per_page: null
+    fallback_metadata:
+      slot_definitions: null
+label: 'Division Standings: Block: Legends'
+id: block.views_block.division_standings-block_legends
+provider: views
+source: block
+source_local_id: 'views_block:division_standings-block_legends'

@@ -1,0 +1,26 @@
+uuid: 7cbebdaf-ab0d-431d-bfa1-931a34b1975b
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.division_standings
+  module:
+    - views
+active_version: 3caa2c54b1ca8b35
+versioned_properties:
+  active:
+    settings:
+      default_settings:
+        id: 'views_block:division_standings-block_challengers'
+        label: 'Division Standings: Block: Challengers'
+        label_display: '0'
+        provider: views
+        views_label: ''
+        items_per_page: null
+    fallback_metadata:
+      slot_definitions: null
+label: 'Division Standings: Block: Challengers'
+id: block.views_block.division_standings-block_challengers
+provider: views
+source: block
+source_local_id: 'views_block:division_standings-block_challengers'

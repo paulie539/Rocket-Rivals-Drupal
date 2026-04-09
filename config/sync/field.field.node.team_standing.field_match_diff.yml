@@ -1,0 +1,23 @@
+uuid: b73e3df8-8524-4811-a249-1304b8cc3865
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_match_diff
+    - node.type.team_standing
+id: node.team_standing.field_match_diff
+field_name: field_match_diff
+entity_type: node
+bundle: team_standing
+label: 'Match Diff'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

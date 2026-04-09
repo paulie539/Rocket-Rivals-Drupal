@@ -1,0 +1,19 @@
+uuid: e2bd2798-875b-429c-a7fb-21fba1f19a0f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_discord
+    - node.type.player
+id: node.player.field_discord
+field_name: field_discord
+entity_type: node
+bundle: player
+label: 'Discord Handle'
+description: 'The player&apos;s Discord username (e.g. username or username#1234).'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

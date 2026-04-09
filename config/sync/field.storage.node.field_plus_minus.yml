@@ -1,0 +1,20 @@
+uuid: 17ecc903-0aca-4bdf-abe2-9e52c55218a2
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_plus_minus
+field_name: field_plus_minus
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

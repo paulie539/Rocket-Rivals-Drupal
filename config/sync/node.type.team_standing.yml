@@ -1,0 +1,11 @@
+uuid: 4ddbc61f-23aa-4e2f-980f-f5b2f015299a
+langcode: en
+status: true
+dependencies: {  }
+name: 'Team Standing'
+type: team_standing
+description: 'A single team&apos;s standings record for one division in one season.'
+help: 'One record per team per season. Set <strong>Division</strong> and <strong>Season</strong> first, then the team&apos;s final <strong>Rank</strong>. Stats come from the Google Sheet — Points (league pts earned), Record (W-L), Match Diff (matches won minus lost), Point Diff (game score differential), +/- (overall rating differential).'
+new_revision: false
+preview_mode: 0
+display_submitted: false

@@ -1,0 +1,23 @@
+uuid: 88c54781-d29e-4218-8ad2-9114a7298e2d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_points
+    - node.type.team_standing
+id: node.team_standing.field_points
+field_name: field_points
+entity_type: node
+bundle: team_standing
+label: Points
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

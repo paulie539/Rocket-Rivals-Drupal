@@ -1,0 +1,23 @@
+<?php
+
+/**
+ * @file
+ * Theme functions for Rocket Rivals.
+ */
+
+/**
+ * Implements hook_preprocess_html().
+ *
+ * Adds a path-based body class (e.g. "path-stats-challengers") so CSS can
+ * target division-specific pages without relying on Drupal's node-only classes.
+ */
+function rocket_rivals_preprocess_html(&$variables) {
+  $current_path = \Drupal::service('path.current')->getPath();
+  $alias = \Drupal::service('path_alias.manager')->getAliasByPath($current_path);
+
+  // Convert "/stats/challengers" → "path-stats-challengers".
+  if ($alias && $alias !== '/') {
+    $class = 'path' . str_replace('/', '-', $alias);
+    $variables['attributes']['class'][] = $class;
+  }
+}

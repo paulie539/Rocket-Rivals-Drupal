@@ -1,0 +1,29 @@
+uuid: c27308b9-dba3-4d6f-b590-8b4e8df3fd7d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_team
+    - node.type.team
+    - node.type.team_standing
+id: node.team_standing.field_team
+field_name: field_team
+entity_type: node
+bundle: team_standing
+label: Team
+description: 'The team this standing record belongs to. The team name may differ from season to season — link to the canonical Team node regardless.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      team: team
+    sort:
+      field: title
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

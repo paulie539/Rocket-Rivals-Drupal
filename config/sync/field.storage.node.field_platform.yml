@@ -1,0 +1,33 @@
+uuid: cee1d549-7e2f-4275-bc25-11873b44d79b
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_platform
+field_name: field_platform
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: pc
+      label: 'PC (Steam / Epic)'
+    -
+      value: playstation
+      label: PlayStation
+    -
+      value: xbox
+      label: Xbox
+    -
+      value: switch
+      label: 'Nintendo Switch'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

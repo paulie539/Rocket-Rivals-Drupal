@@ -1,0 +1,19 @@
+uuid: 98d43925-7e9f-4d5d-9d9d-5f071f60a6ad
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_platform
+    - node.type.player
+id: node.player.field_platform
+field_name: field_platform
+entity_type: node
+bundle: player
+label: Platform
+description: 'The platform this player primarily competes on.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

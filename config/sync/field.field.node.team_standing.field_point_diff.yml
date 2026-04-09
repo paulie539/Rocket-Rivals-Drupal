@@ -1,0 +1,23 @@
+uuid: 476eed20-5f22-4322-8262-e4e6c77b0560
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_point_diff
+    - node.type.team_standing
+id: node.team_standing.field_point_diff
+field_name: field_point_diff
+entity_type: node
+bundle: team_standing
+label: 'Point Diff'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

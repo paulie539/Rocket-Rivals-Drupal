@@ -1,0 +1,210 @@
+/* ==========================================================================
+   Stats — Division Standings Table
+   Attached via the `divisions` library on /stats/* routes.
+   ========================================================================== */
+
+/* ── Wrapper ──────────────────────────────────────────────────────────────── */
+.views-element-container {
+  padding: 0;
+}
+
+/* ── Season filter exposed form ───────────────────────────────────────────── */
+.views-element-container .views-exposed-form {
+  margin-bottom: 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.views-element-container .views-exposed-form label {
+  color: #b0a8c8;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin: 0;
+}
+
+.views-element-container .views-exposed-form select {
+  background: #120f1e;
+  color: #e8e0f8;
+  border: 1px solid #3a2e5c;
+  border-radius: 4px;
+  padding: 0.35rem 2rem 0.35rem 0.75rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%23b0a8c8'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.6rem center;
+}
+
+.views-element-container .views-exposed-form .form-actions {
+  margin: 0;
+}
+
+.views-element-container .views-exposed-form .button {
+  background: #2d1b69;
+  color: #e8e0f8;
+  border: 1px solid #4a3a8a;
+  border-radius: 4px;
+  padding: 0.35rem 1rem;
+  font-size: 0.85rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.views-element-container .views-exposed-form .button:hover {
+  background: #3d2b7a;
+  border-color: #6a5aaa;
+}
+
+/* ── Table ────────────────────────────────────────────────────────────────── */
+.views-element-container table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+  color: #d8d0f0;
+}
+
+.views-element-container table thead th {
+  background: #120f1e;
+  color: #b0a8c8;
+  text-transform: uppercase;
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  padding: 0.6rem 0.75rem;
+  border-bottom: 2px solid #3a2e5c;
+  white-space: nowrap;
+  font-weight: 600;
+}
+
+/* Default division accent — overridden per-division below */
+body.path-stats-challengers .views-element-container table thead th {
+  border-bottom-color: #6e5ae8;
+}
+body.path-stats-legends .views-element-container table thead th {
+  border-bottom-color: #e87a2a;
+}
+body.path-stats-titans .views-element-container table thead th {
+  border-bottom-color: #e85a9a;
+}
+
+.views-element-container table thead th a {
+  color: #b0a8c8;
+  text-decoration: none;
+}
+
+.views-element-container table thead th a:hover,
+.views-element-container table thead th.is-active a {
+  color: #e8e0f8;
+}
+
+.views-element-container table tbody tr {
+  border-bottom: 1px solid #1e1630;
+  transition: background 0.15s ease;
+}
+
+.views-element-container table tbody tr:hover {
+  background: #1a1230;
+}
+
+.views-element-container table td {
+  padding: 0.6rem 0.75rem;
+  vertical-align: middle;
+}
+
+/* ── Rank column ──────────────────────────────────────────────────────────── */
+.views-element-container table .views-field-field-rank {
+  width: 2.5rem;
+  text-align: center;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Gold for #1 */
+.views-element-container table tbody tr:first-child .views-field-field-rank {
+  color: #ffd700;
+  font-weight: bold;
+}
+
+/* ── Team name column ─────────────────────────────────────────────────────── */
+.views-element-container table .views-field-field-team {
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+/* ── Banner column ────────────────────────────────────────────────────────── */
+.views-element-container table .views-field-field-banner {
+  width: 140px;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+}
+
+.views-element-container table .views-field-field-banner img {
+  height: 50px;
+  width: auto;
+  display: block;
+  object-fit: contain;
+}
+
+/* ── Stat columns — right-aligned ─────────────────────────────────────────── */
+.views-element-container table .views-field-field-points,
+.views-element-container table .views-field-field-match-diff,
+.views-element-container table .views-field-field-point-diff,
+.views-element-container table .views-field-field-plus-minus {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Positive diff values (default greenish) */
+.views-element-container table .views-field-field-match-diff,
+.views-element-container table .views-field-field-point-diff,
+.views-element-container table .views-field-field-plus-minus {
+  color: #88c888;
+}
+
+/* ── Edit link column ─────────────────────────────────────────────────────── */
+.views-element-container table .views-field-node-link-edit {
+  width: 3rem;
+  text-align: center;
+}
+
+.views-element-container table .views-field-node-link-edit a {
+  color: #6a5aaa;
+  font-size: 0.78rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.views-element-container table .views-field-node-link-edit a:hover {
+  color: #9a8ada;
+}
+
+/* ── Empty result ─────────────────────────────────────────────────────────── */
+.views-element-container .view-empty {
+  color: #7060a0;
+  padding: 2rem;
+  text-align: center;
+  font-style: italic;
+}
+
+/* ── Mobile ───────────────────────────────────────────────────────────────── */
+@media (max-width: 600px) {
+  .views-element-container table {
+    font-size: 0.82rem;
+  }
+
+  .views-element-container table .views-field-field-banner img {
+    height: 36px;
+  }
+
+  .views-element-container table .views-field-field-match-diff,
+  .views-element-container table .views-field-field-point-diff,
+  .views-element-container table th.views-field-field-match-diff,
+  .views-element-container table th.views-field-field-point-diff {
+    display: none;
+  }
+}

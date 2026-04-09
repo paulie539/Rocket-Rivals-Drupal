@@ -1,0 +1,23 @@
+uuid: 77710e72-cbe6-4fd0-b42c-75473303b5bf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_rank
+    - node.type.team_standing
+id: node.team_standing.field_rank
+field_name: field_rank
+entity_type: node
+bundle: team_standing
+label: Rank
+description: 'Final standing position (1 = first place).'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 1
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

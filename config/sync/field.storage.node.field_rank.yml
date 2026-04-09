@@ -1,0 +1,20 @@
+uuid: f6535d23-dafc-472e-b0af-1b678abb6503
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_rank
+field_name: field_rank
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,24 @@
+uuid: e11d7abe-d772-4087-b3d3-bd3a9e383fac
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_banner
+    - media.type.image
+    - node.type.team_standing
+id: node.team_standing.field_banner
+field_name: field_banner
+entity_type: node
+bundle: team_standing
+label: 'Team Banner'
+description: 'Upload the team&apos;s banner image.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+field_type: entity_reference

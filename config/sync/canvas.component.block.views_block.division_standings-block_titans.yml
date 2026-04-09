@@ -1,0 +1,26 @@
+uuid: 4ff676f4-4f62-4490-a9d2-74ff82ca95bd
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.division_standings
+  module:
+    - views
+active_version: af33549bbf0d5c3d
+versioned_properties:
+  active:
+    settings:
+      default_settings:
+        id: 'views_block:division_standings-block_titans'
+        label: 'Division Standings: Block: Titans'
+        label_display: '0'
+        provider: views
+        views_label: ''
+        items_per_page: null
+    fallback_metadata:
+      slot_definitions: null
+label: 'Division Standings: Block: Titans'
+id: block.views_block.division_standings-block_titans
+provider: views
+source: block
+source_local_id: 'views_block:division_standings-block_titans'
